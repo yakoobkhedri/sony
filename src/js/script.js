@@ -56,3 +56,24 @@ var categorySwiper = new Swiper(".categorySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var mostSell = new Swiper(".mostSell", {
+  slidesPerView: 1.3,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

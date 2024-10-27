@@ -106,6 +106,18 @@ a {
         linear-gradient(to left, #E56F8C 4.55%, #7476ED 49.85%, #64C2DB 93.3%) padding-box,
         linear-gradient( transparent, transparent) border-box;
 }
+.border-linear3{
+  border: solid 1px transparent;
+  border-radius: 22px;
+  background:
+  linear-gradient(270deg, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) padding-box,
+      linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) border-box;
+}
+.gradient-hover3:hover{
+  background:
+        linear-gradient(to left, #E56F8C 4.55%, #7476ED 49.85%, #64C2DB 93.3%) padding-box,
+        linear-gradient( transparent, transparent) border-box;
+}
 .gradient-hover:hover svg path{
    fill: white;
 }
@@ -178,6 +190,9 @@ input[type="number"] {
 }
 .shadow-2{
   box-shadow: 0px 0px 190.05px 0px #00000096;
+}
+.shadow-3{
+  box-shadow: 0px -18px 38px 2px #0000001A;
 }
 /* swiper */
 #banner .swiper-pagination-bullet{
