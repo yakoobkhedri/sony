@@ -25,7 +25,7 @@ var banner= new Swiper(".banner", {
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".swiper-pagination2",
+    el: ".swiper-pagination1",
     clickable: true,
   }
 });
@@ -46,14 +46,6 @@ var categorySwiper = new Swiper(".categorySwiper", {
     1200: {
       slidesPerView: 5,
     }
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -76,4 +68,32 @@ var mostSell = new Swiper(".mostSell", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  }
+});
+var mostSell2 = new Swiper(".mostSell2", {
+  slidesPerView: 1.3,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  }
 });

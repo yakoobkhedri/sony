@@ -208,6 +208,21 @@ input[type="number"] {
   height: 18px!important;
   background: linear-gradient(359.73deg, #64C2DB 0.16%, #7476ED 49.59%, #E56F8C 97%);
 }
+.swiper-pagination{
+  bottom: 46px!important;
+}
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+  background-color: #DEDEDE;
+  opacity: 100;
+  transition: all .4s;
+}
+.swiper-pagination-bullet-active{
+  width: 43px;
+  background-color: #7E5EFF;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 640px) {
 
 }
