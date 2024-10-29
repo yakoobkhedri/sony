@@ -97,3 +97,47 @@ var mostSell2 = new Swiper(".mostSell2", {
     clickable: true,
   }
 });
+var tvSize = new Swiper(".tvSize", {
+  slidesPerView: 1.3,
+  spaceBetween: 50,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  }
+});
+var mostSell3 = new Swiper(".mostSell3", {
+  slidesPerView: 1.3,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination5",
+    clickable: true,
+  }
+});
