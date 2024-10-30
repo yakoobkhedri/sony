@@ -141,3 +141,40 @@ var mostSell3 = new Swiper(".mostSell3", {
     clickable: true,
   }
 });
+var mostSell4 = new Swiper(".mostSell4", {
+  slidesPerView: 1.3,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination6",
+    clickable: true,
+  }
+});
+var blog = new Swiper(".blog", {
+  slidesPerView: 1,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  }
+});

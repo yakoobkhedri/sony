@@ -68,6 +68,12 @@ a {
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
 }
+.bg-blue{
+  background-image: url('../src/img/Mask group.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* after */
 .imgAfter{
   @apply after:content-[url('../src/img/shadow.png')] after:w-[105px] after:h-3 after:absolute after:mx-auto rtl:after:left-0 ltr:after:right-0 rtl:after:right-10 ltr:after:-left-10 after:bottom-[55px];
