@@ -709,6 +709,50 @@ video {
   top: 1.5rem;
 }
 
+.-top-0 {
+  top: -0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
+.-top-14 {
+  top: -3.5rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-11 {
+  top: -2.75rem;
+}
+
+.-top-9 {
+  top: -2.25rem;
+}
+
+.-bottom-2 {
+  bottom: -0.5rem;
+}
+
+.-bottom-3 {
+  bottom: -0.75rem;
+}
+
+.-bottom-2\.5 {
+  bottom: -0.625rem;
+}
+
+.-top-\[19px\] {
+  top: -19px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -845,6 +889,10 @@ video {
 
 .mt-\[53px\] {
   margin-top: 53px;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .line-clamp-1 {
@@ -1013,6 +1061,10 @@ video {
   height: 100%;
 }
 
+.h-\[107px\] {
+  height: 107px;
+}
+
 .\!w-\[100px\] {
   width: 100px !important;
 }
@@ -1135,6 +1187,14 @@ video {
 
 .w-\[68\%\] {
   width: 68%;
+}
+
+.w-\[75px\] {
+  width: 75px;
+}
+
+.w-\[92\%\] {
+  width: 92%;
 }
 
 .max-w-\[1536px\] {
@@ -1268,6 +1328,10 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-x-6 {
@@ -1680,6 +1744,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-7 {
@@ -2527,6 +2595,42 @@ input[type="number"] {
     top: 78px;
   }
 
+  .lg\:top-12 {
+    top: 3rem;
+  }
+
+  .lg\:top-\[50px\] {
+    top: 50px;
+  }
+
+  .lg\:top-\[52px\] {
+    top: 52px;
+  }
+
+  .lg\:top-\[53px\] {
+    top: 53px;
+  }
+
+  .lg\:top-\[54px\] {
+    top: 54px;
+  }
+
+  .lg\:left-\[158px\] {
+    left: 158px;
+  }
+
+  .lg\:-bottom-\[127px\] {
+    bottom: -127px;
+  }
+
+  .lg\:-bottom-\[133px\] {
+    bottom: -133px;
+  }
+
+  .lg\:-bottom-\[134px\] {
+    bottom: -134px;
+  }
+
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -2628,6 +2732,11 @@ input[type="number"] {
     font-size: 25px;
   }
 
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:-left-20) {
     left: -5rem;
   }
@@ -2654,12 +2763,20 @@ input[type="number"] {
     left: 190px;
   }
 
+  .xl\:top-\[54px\] {
+    top: 54px;
+  }
+
   .xl\:col-span-5 {
     grid-column: span 5 / span 5;
   }
 
   .xl\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:gap-\[114px\] {
@@ -2672,6 +2789,23 @@ input[type="number"] {
 
   .xl\:gap-20 {
     gap: 5rem;
+  }
+
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .xl\:text-\[11px\] {
+    font-size: 11px;
+  }
+
+  .xl\:leading-8 {
+    line-height: 2rem;
   }
 
   :is([dir="ltr"] .ltr\:xl\:-left-\[89px\]) {
