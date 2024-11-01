@@ -93,6 +93,9 @@ a {
 .bg-gradient3{
   background: linear-gradient(180deg, #D0EDF4 0%, #D4D6F8 50%, #F3D3DF 100%);
 }
+.bg-gradient4{
+  background: linear-gradient(310.86deg, #64C2DB 3.48%, #7476ED 47.73%, #E56F8C 90.18%);
+}
 .bg-gradient2:hover{
   background: linear-gradient(270deg, #E56F8C 4.55%, #7476ED 49.85%, #64C2DB 93.3%);
 }
@@ -103,10 +106,22 @@ a {
         linear-gradient( #0f1339, #0f1339) padding-box,
         linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) border-box;
 }
+.border-linear1{
+  border: solid 1px transparent;
+  border-radius: 22px;
+  background:
+      linear-gradient( white, white) padding-box,
+      linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) border-box;
+}
 .gradient-hover:hover{
   background:
         linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) padding-box,
         linear-gradient( #0f1339, #0f1339) border-box;
+}
+.gradient-hover1:hover{
+  background:
+        linear-gradient(to left, #64C2DB 4.55%, #7476ED 49.85%, #E56F8C 93.3%) padding-box,
+        linear-gradient( transparent, transparent) border-box;
 }
 .seeAll.border-linear2{
   border: solid 1px transparent;
@@ -132,7 +147,7 @@ a {
         linear-gradient(to left, #E56F8C 4.55%, #7476ED 49.85%, #64C2DB 93.3%) padding-box,
         linear-gradient( transparent, transparent) border-box;
 }
-.gradient-hover:hover svg path{
+.gradient-hover:hover svg path,.gradient-hover1:hover svg path{
    fill: white;
 }
 .gradient-hover2:hover svg stop.first{
@@ -140,6 +155,16 @@ a {
 }
 .gradient-hover2:hover svg stop.last{
   stop-color: #64C2DB;
+}
+.phoneIcon:hover svg stop.first{
+  stop-color: #E56F8C;
+}
+.phoneIcon:hover svg stop.last{
+  stop-color: #64C2DB;
+}
+.cartNumber:hover p{
+  background: white;
+  color: black;
 }
 /* hover */
 .btnHover {
@@ -210,6 +235,9 @@ input[type="number"] {
 }
 .shadow-4{
     box-shadow: -14px 11px 80px 0px #7e5eff;
+}
+.shadow-5{
+  box-shadow: 0px 0px 200px 0px #00000026;
 }
 /* swiper */
 #banner .swiper-pagination-bullet{
