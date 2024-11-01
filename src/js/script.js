@@ -20,10 +20,7 @@ var banner= new Swiper(".banner", {
   loop: true,
   spaceBetween: 65,
   slidesPerView: 1,
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
+
   pagination: {
     el: ".swiper-pagination1",
     clickable: true,
