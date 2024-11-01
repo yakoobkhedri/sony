@@ -2928,6 +2928,10 @@ input[type="number"] {
     max-width: 380px;
   }
 
+  .lg\:max-w-\[409px\] {
+    max-width: 409px;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
