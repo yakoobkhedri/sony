@@ -879,6 +879,10 @@ video {
   margin-top: -1.25rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1069,6 +1073,14 @@ video {
   height: 50px;
 }
 
+.h-\[108px\] {
+  height: 108px;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .\!w-\[100px\] {
   width: 100px !important;
 }
@@ -1229,6 +1241,14 @@ video {
   width: 8rem;
 }
 
+.w-\[170px\] {
+  width: 170px;
+}
+
+.w-\[122px\] {
+  width: 122px;
+}
+
 .max-w-\[1536px\] {
   max-width: 1536px;
 }
@@ -1383,6 +1403,14 @@ video {
   row-gap: 6rem;
 }
 
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1453,6 +1481,10 @@ video {
 
 .rounded-\[19px\] {
   border-radius: 19px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-t-\[20px\] {
@@ -1771,6 +1803,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1830,6 +1866,10 @@ video {
 
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
 }
 
 .font-black {
@@ -2427,6 +2467,14 @@ input[type="number"] {
   left: 0.125rem;
 }
 
+:is([dir="ltr"] .ltr\:left-5) {
+  left: 1.25rem;
+}
+
+:is([dir="ltr"] .ltr\:left-\[27px\]) {
+  left: 27px;
+}
+
 :is([dir="ltr"] .ltr\:-ml-\[8\.9px\]) {
   margin-left: -8.9px;
 }
@@ -2517,6 +2565,10 @@ input[type="number"] {
   padding-right: 46px;
 }
 
+:is([dir="ltr"] .ltr\:pr-\[14px\]) {
+  padding-right: 14px;
+}
+
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
 }
@@ -2583,6 +2635,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-0\.5) {
   right: 0.125rem;
+}
+
+:is([dir="rtl"] .rtl\:right-5) {
+  right: 1.25rem;
 }
 
 :is([dir="rtl"] .rtl\:-mr-\[8\.9px\]) {
@@ -2671,6 +2727,10 @@ input[type="number"] {
   padding-right: 46px;
 }
 
+:is([dir="rtl"] .rtl\:pl-\[14px\]) {
+  padding-left: 14px;
+}
+
 :is([dir="rtl"] .rtl\:text-left) {
   text-align: left;
 }
@@ -2752,6 +2812,10 @@ input[type="number"] {
     margin-top: 0px;
   }
 
+  .min-\[460px\]\:mb-\[30px\] {
+    margin-bottom: 30px;
+  }
+
   .min-\[460px\]\:h-\[272px\] {
     height: 272px;
   }
@@ -2762,6 +2826,10 @@ input[type="number"] {
 
   .min-\[460px\]\:h-7 {
     height: 1.75rem;
+  }
+
+  .min-\[460px\]\:h-5 {
+    height: 1.25rem;
   }
 
   .min-\[460px\]\:w-\[55px\] {
@@ -2776,8 +2844,20 @@ input[type="number"] {
     width: 2.5rem;
   }
 
+  .min-\[460px\]\:w-\[257px\] {
+    width: 257px;
+  }
+
+  .min-\[460px\]\:w-\[183px\] {
+    width: 183px;
+  }
+
   .min-\[460px\]\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .min-\[460px\]\:gap-y-24 {
+    row-gap: 6rem;
   }
 
   .min-\[460px\]\:rounded-\[22px\] {
@@ -2788,9 +2868,17 @@ input[type="number"] {
     border-radius: 22px !important;
   }
 
+  .min-\[460px\]\:rounded-\[15px\] {
+    border-radius: 15px;
+  }
+
   .min-\[460px\]\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .min-\[460px\]\:pt-16 {
+    padding-top: 4rem;
   }
 
   .min-\[460px\]\:text-xl {
@@ -2808,8 +2896,37 @@ input[type="number"] {
     line-height: 2rem;
   }
 
+  .min-\[460px\]\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   :is([dir="ltr"] .ltr\:min-\[460px\]\:right-9) {
     right: 2.25rem;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:right-10) {
+    right: 2.5rem;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:left-\[33px\]) {
+    left: 33px;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:left-\[37px\]) {
+    left: 37px;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:left-\[39px\]) {
+    left: 39px;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:left-\[42px\]) {
+    left: 42px;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:left-\[41px\]) {
+    left: 41px;
   }
 
   :is([dir="ltr"] .min-\[460px\]\:ltr\:rounded-r-\[22px\]) {
@@ -2819,6 +2936,18 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:min-\[460px\]\:rounded-tl-none) {
     border-top-left-radius: 0px;
+  }
+
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:pr-\[46px\]) {
+    padding-right: 46px;
+  }
+
+  :is([dir="rtl"] .min-\[460px\]\:rtl\:left-10) {
+    left: 2.5rem;
+  }
+
+  :is([dir="rtl"] .min-\[460px\]\:rtl\:right-\[33px\]) {
+    right: 33px;
   }
 
   :is([dir="rtl"] .min-\[460px\]\:rtl\:rounded-l-\[50px\]) {
@@ -2833,6 +2962,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:min-\[460px\]\:rounded-tr-none) {
     border-top-right-radius: 0px;
+  }
+
+  :is([dir="rtl"] .min-\[460px\]\:rtl\:pl-\[46px\]) {
+    padding-left: 46px;
   }
 }
 
@@ -2895,6 +3028,10 @@ input[type="number"] {
     height: 272px;
   }
 
+  .sm\:h-56 {
+    height: 14rem;
+  }
+
   .sm\:w-\[126px\] {
     width: 126px;
   }
@@ -2919,12 +3056,20 @@ input[type="number"] {
     width: 194px;
   }
 
+  .sm\:w-72 {
+    width: 18rem;
+  }
+
   .sm\:gap-2 {
     gap: 0.5rem;
   }
 
   .sm\:gap-\[18px\] {
     gap: 18px;
+  }
+
+  .sm\:gap-y-24 {
+    row-gap: 6rem;
   }
 
   .sm\:\!rounded-\[13px\] {
@@ -2989,6 +3134,10 @@ input[type="number"] {
     padding-bottom: 1.5rem;
   }
 
+  .sm\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .sm\:text-\[10px\] {
     font-size: 10px;
   }
@@ -3017,12 +3166,21 @@ input[type="number"] {
     font-size: 22px;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:leading-8 {
     line-height: 2rem;
   }
 }
 
 @media (min-width: 768px) {
+  .md\:mt-\[103px\] {
+    margin-top: 103px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3054,6 +3212,11 @@ input[type="number"] {
 
   .md\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -3110,6 +3273,10 @@ input[type="number"] {
     margin-top: 150px;
   }
 
+  .lg\:mt-\[103px\] {
+    margin-top: 103px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3158,6 +3325,10 @@ input[type="number"] {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3180,6 +3351,11 @@ input[type="number"] {
 
   .lg\:gap-\[106px\] {
     gap: 106px;
+  }
+
+  .lg\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .lg\:rounded-bl-\[53px\] {
@@ -3296,6 +3472,10 @@ input[type="number"] {
 
   .xl\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:gap-16 {
