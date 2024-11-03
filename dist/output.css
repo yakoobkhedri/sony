@@ -1065,6 +1065,10 @@ video {
   height: 78px;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .\!w-\[100px\] {
   width: 100px !important;
 }
