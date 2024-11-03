@@ -20,7 +20,7 @@ var banner= new Swiper(".banner", {
   loop: true,
   spaceBetween: 65,
   slidesPerView: 1,
-
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination1",
     clickable: true,
@@ -97,7 +97,7 @@ var mostSell2 = new Swiper(".mostSell2", {
 var tvSize = new Swiper(".tvSize", {
   slidesPerView: 1.3,
   spaceBetween: 50,
-  autoplay: true,
+  // autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
