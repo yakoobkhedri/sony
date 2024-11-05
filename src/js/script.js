@@ -163,15 +163,20 @@ var mostSell4 = new Swiper(".mostSell4", {
   }
 });
 var blog = new Swiper(".blog", {
-  slidesPerView: 1,
-  spaceBetween: 24,
+  slidesPerView: 1.3,
+  spaceBetween: 16,
   autoplay: true,
   breakpoints: {
     576: {
       slidesPerView: 2,
+      spaceBetween: 24,
     },
     1200: {
       slidesPerView: 3,
     }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
   }
 });
