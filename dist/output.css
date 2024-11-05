@@ -3423,6 +3423,16 @@ input[type="number"] {
     padding-right: 4rem;
   }
 
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pb-20 {
     padding-bottom: 5rem;
   }
@@ -3448,12 +3458,20 @@ input[type="number"] {
     padding-left: 46px;
   }
 
+  :is([dir="ltr"] .ltr\:md\:pl-0) {
+    padding-left: 0px;
+  }
+
   :is([dir="rtl"] .rtl\:md\:border-r) {
     border-right-width: 1px;
   }
 
   :is([dir="rtl"] .rtl\:md\:pr-\[46px\]) {
     padding-right: 46px;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pr-0) {
+    padding-right: 0px;
   }
 }
 
