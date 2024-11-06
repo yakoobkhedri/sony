@@ -206,14 +206,18 @@ a {
 }
 .dropdownContent.active {
   max-height: 2000px;
-  margin-top: 32px;
   overflow: visible;
 }
 .mobileMenu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+  top: 55px;
 }
 .mobileMenu.active {
-  display: block;
+  opacity: 100%;
+  visibility: visible;
+  top: 20px;
 }
 #dropdownBtn svg.active {
   transform: rotate(0);
