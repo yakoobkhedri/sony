@@ -1,21 +1,22 @@
-// input number
+// menu
 
-let increment = Array.from(document.getElementsByClassName('increment'));
-let decrement = Array.from(document.getElementsByClassName('decrement'));
+let hamIcon = document.getElementById('hamIcon');
+let mobileMenu = document.querySelector('.mobileMenu');
+let dropdownBtn = document.getElementById('dropdownBtn');
 
-increment.forEach((item)=>{
-  item.addEventListener('click', function () {
-    item.previousElementSibling.value ++;
-  })
-});
-decrement.forEach((item)=>{
-  item.addEventListener('click', function () {
-    if (item.nextElementSibling.value > 1) {
-      item.nextElementSibling.value --;
-    }
-  })
-});
+hamIcon.addEventListener('click', function () {
+  mobileMenu.classList.add('active');
+})
+dropdownBtn.addEventListener('click', function () {
+  this.querySelector('svg').classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+})
+document.getElementById('closemenu').addEventListener('click', function () {
+  mobileMenu.classList.remove('active');
+})
+
 // swiper
+
 var banner= new Swiper(".banner", {
   loop: true,
   spaceBetween: 65,

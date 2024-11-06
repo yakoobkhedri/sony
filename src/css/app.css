@@ -198,11 +198,27 @@ a {
   }
 }
 /* hamIcon */
-#hamIcon.active svg:last-child{
+.dropdownContent {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s;
+}
+.dropdownContent.active {
+  max-height: 2000px;
+  margin-top: 32px;
+  overflow: visible;
+}
+.mobileMenu {
+  background-color: #fffffff5;
+  border: 1px solid #00000026;
+  display: none;
+}
+.mobileMenu.active {
   display: block;
 }
-#hamIcon.active svg:first-child{
-  display: none;
+#dropdownBtn svg.active {
+  transform: rotate(0);
 }
 /* input number */
 input[type="number"] {
