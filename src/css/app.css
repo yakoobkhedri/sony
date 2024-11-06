@@ -184,6 +184,23 @@ a {
 .btnHover:hover::before {
   animation: shine 1.5s ease-out infinite;
 }
+
+.card {
+  transform-style: preserve-3d;
+}
+
+.card img.img {
+  transition: all .4s;
+  pointer-events: none;
+  z-index: 10!important;
+}
+.card:hover img.img {
+  transform: translate3d(-10%, -10%, 20px);
+}
+.card:hover .sneakers {
+  transform: translateZ(40px);
+  opacity: 0.85;
+}
 @keyframes shine {
   0% {
     left: -100px;
