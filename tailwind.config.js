@@ -23,7 +23,7 @@ module.exports = {
         RokhBlack: "Rokh-Black",
       },
       maxWidth:{
-        'content':'1280px',
+        'content':'1400px',
       },
     }
 },
