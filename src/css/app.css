@@ -292,6 +292,9 @@ input[type="number"] {
 .shadow-7{
   box-shadow: 0px 4px 23px 0px #0000001A;
 }
+.shadow-next {
+  box-shadow: -2px 0px 24px 0px #0000001A;
+}
 /* swiper */
 #banner .swiper-pagination-bullet{
   width: 3px!important;
@@ -320,6 +323,27 @@ input[type="number"] {
   width: 43px;
   background-color: #7E5EFF;
   border-radius: 10px;
+}
+/* scrollbar */
+.customScrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+  background: #E9E9E9;
+  margin: 29px 0;
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background-color: #7476ED;
+  border-radius: 20px;
+  border: 3px solid #7476ED;
+}
+
+.customScrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #7476ED #E9E9E9;
+  scroll-margin: 29px 0;
 }
 @media only screen and (max-width: 576px) {
  
