@@ -181,3 +181,14 @@ var blog = new Swiper(".blog", {
     prevEl: ".swiper-button-prev4",
   }
 });
+
+// acordion
+
+let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
+
+acordionBtn.forEach((item)=> {
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('img').classList.toggle('active');
+  })
+})
