@@ -722,6 +722,10 @@ video {
   top: 1.5rem;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
 .top-9 {
   top: 2.25rem;
 }
@@ -748,18 +752,6 @@ video {
 
 .top-\[31px\] {
   top: 31px;
-}
-
-.top-12 {
-  top: 3rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-8 {
-  top: 2rem;
 }
 
 .-z-0 {
@@ -796,14 +788,6 @@ video {
 
 .col-span-12 {
   grid-column: span 12 / span 12;
-}
-
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
-.col-span-9 {
-  grid-column: span 9 / span 9;
 }
 
 .\!mx-auto {
@@ -1181,6 +1165,10 @@ video {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .max-h-\[213px\] {
   max-height: 213px;
 }
@@ -1349,6 +1337,10 @@ video {
   width: 100%;
 }
 
+.w-\[94\%\] {
+  width: 94%;
+}
+
 .min-w-\[460px\] {
   min-width: 460px;
 }
@@ -1439,12 +1431,12 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1548,10 +1540,6 @@ video {
   row-gap: 2rem;
 }
 
-.gap-y-7 {
-  row-gap: 1.75rem;
-}
-
 .overflow-auto {
   overflow: auto;
 }
@@ -1649,6 +1637,11 @@ video {
 .rounded-t-\[23px\] {
   border-top-left-radius: 23px;
   border-top-right-radius: 23px;
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 .rounded-bl-\[21px\] {
@@ -1822,6 +1815,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#7e5eff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 94 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f0ecff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 236 255 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -2175,11 +2178,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#393939\] {
-  --tw-text-opacity: 1;
-  color: rgb(57 57 57 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -3933,10 +3931,6 @@ input[type="number"] {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3962,6 +3956,10 @@ input[type="number"] {
     row-gap: 0px;
   }
 
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -3982,6 +3980,10 @@ input[type="number"] {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-\[22px\] {
+    font-size: 22px;
   }
 
   :is([dir="ltr"] .ltr\:md\:border-l) {
@@ -4034,6 +4036,10 @@ input[type="number"] {
     order: -9999;
   }
 
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -4048,10 +4054,6 @@ input[type="number"] {
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
-  }
-
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
   }
 
   .lg\:col-span-9 {
@@ -4081,6 +4083,10 @@ input[type="number"] {
 
   .lg\:mt-\[103px\] {
     margin-top: 103px;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .lg\:block {
@@ -4139,10 +4145,6 @@ input[type="number"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -4155,8 +4157,16 @@ input[type="number"] {
     gap: 2.5rem;
   }
 
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
   .lg\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:gap-5 {
@@ -4171,8 +4181,12 @@ input[type="number"] {
     gap: 75px;
   }
 
-  .lg\:gap-4 {
-    gap: 1rem;
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
   .lg\:gap-x-6 {
@@ -4196,6 +4210,10 @@ input[type="number"] {
     border-top-left-radius: 53px;
   }
 
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
   .lg\:p-11 {
     padding: 2.75rem;
   }
@@ -4203,6 +4221,11 @@ input[type="number"] {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:text-justify {
@@ -4216,6 +4239,10 @@ input[type="number"] {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
   }
 
   :is([dir="ltr"] .ltr\:lg\:-left-\[25px\]) {
@@ -4254,6 +4281,14 @@ input[type="number"] {
     padding-right: 200px;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:pl-6) {
+    padding-left: 1.5rem;
+  }
+
+  :is([dir="ltr"] .ltr\:lg\:pr-4) {
+    padding-right: 1rem;
+  }
+
   :is([dir="ltr"] .ltr\:lg\:text-left) {
     text-align: left;
   }
@@ -4286,6 +4321,14 @@ input[type="number"] {
     padding-right: 50px;
   }
 
+  :is([dir="rtl"] .rtl\:lg\:pl-4) {
+    padding-left: 1rem;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:pr-6) {
+    padding-right: 1.5rem;
+  }
+
   :is([dir="rtl"] .rtl\:lg\:text-right) {
     text-align: right;
   }
@@ -4312,6 +4355,10 @@ input[type="number"] {
     grid-column: span 7 / span 7;
   }
 
+  .xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
   .xl\:w-\[68\%\] {
     width: 68%;
   }
@@ -4334,6 +4381,10 @@ input[type="number"] {
 
   .xl\:gap-4 {
     gap: 1rem;
+  }
+
+  .xl\:gap-12 {
+    gap: 3rem;
   }
 
   .xl\:text-sm {
