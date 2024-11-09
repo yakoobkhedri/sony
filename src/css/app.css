@@ -292,6 +292,9 @@ input[type="number"] {
 .shadow-7{
   box-shadow: 0px 4px 23px 0px #0000001A;
 }
+.shadow-8{
+  box-shadow: 0px 0px 43.02px 0px #0000001A;
+}
 .shadow-next {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
