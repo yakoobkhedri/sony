@@ -259,14 +259,17 @@ input[type="number"] {
   @apply rtl:-right-[34px] ltr:-left-[34px]
 }
 /* accordion */
-.acordionBtn img.active{
+.acordionBtn img.active,.acordionBtn2 img.active{
   transform: rotate(180deg);
 }
-.acordionContent {
+.acordionBtn2.active{
+  background: #F3F5FF;
+}
+.acordionContent,.acordionContent2 {
   max-height: 0;
   overflow: hidden;
 }
-.acordionContent.active {
+.acordionContent.active,.acordionContent2.active {
   max-height: 2000px;
   overflow: visible;
 }
