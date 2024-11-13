@@ -31,7 +31,7 @@ var aboutBanner= new Swiper(".aboutBanner", {
   loop: true,
   spaceBetween: 65,
   slidesPerView: 1,
-  // autoplay: true,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination5",
     clickable: true,
