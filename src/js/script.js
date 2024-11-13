@@ -27,6 +27,16 @@ var banner= new Swiper(".banner", {
     clickable: true,
   }
 });
+var aboutBanner= new Swiper(".aboutBanner", {
+  loop: true,
+  spaceBetween: 65,
+  slidesPerView: 1,
+  // autoplay: true,
+  pagination: {
+    el: ".swiper-pagination5",
+    clickable: true,
+  }
+});
 var categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 1.5,
   spaceBetween: 38,
