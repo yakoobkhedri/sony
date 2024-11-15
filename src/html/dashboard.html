@@ -16,7 +16,7 @@
     <div style="visibility: hidden; opacity: 0;" data-button="add-address-modal"
     class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
     <form
-      class="modal-content mb-20 mt-[87px] sm:mt-[196px] bg-white shadow-4 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
+      class="modal-content mb-20 mt-[87px] sm:mt-[196px] bg-white shadow-2 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
       <div class="close-button cursor-pointer inline-flex items-center gap-[10px] font-bold text-lg sm:text-2xl text-[#7E5EFF] rtl:font-yekanBakhBold ltr:font-MontserratBold">
         <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
         <h4>افزودن آدرس جدید</h4>
@@ -31,7 +31,7 @@
       </div>
       <div class="flex-between mt-8 sm:mt-14 gap-3 flex-wrap">
         <p class="text-sm font-bold">بسته شما به این آدرس ارسال خواهد شد.</p>
-        <div id="address-details-modal" class="btnHover cursor-pointer rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
+        <div id="address-details-modal" class="btnHover cursor-pointer relative rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
           <img alt="icon" src="../img/svg/archive-tick.svg">
           <p>تایید و ادامه</p>
         </div>
@@ -41,7 +41,7 @@
     <div style="visibility: hidden; opacity: 0;" data-button="address-details-modal"
     class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
     <form
-      class="modal-content mb-20 mt-[641px] sm:mt-[220px] bg-white shadow-4 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
+      class="modal-content mb-20 mt-[641px] sm:mt-[220px] bg-white shadow-2 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
       <div class="close-button cursor-pointer inline-flex items-center gap-[10px] font-bold text-lg sm:text-2xl text-[#7E5EFF] rtl:font-yekanBakhBold ltr:font-MontserratBold">
         <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
         <h4>جزئیات آدرس</h4>
@@ -114,7 +114,7 @@
             <input placeholder="نگار امینی" class="font-semibold px-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
           </div>
         </div>
-        <button class="btnHover ltr:ml-auto rtl:mr-auto rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold mt-7 bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
+        <button class="btnHover relative ltr:ml-auto rtl:mr-auto rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold mt-7 bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
           <img alt="icon" src="../img/svg/archive-tick.svg">
           <p>ثبت آدرس</p>
         </button>
@@ -124,7 +124,7 @@
     <div style="visibility: hidden; opacity: 0;" data-button="profile-edit-modal"
       class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
       <form
-        class="modal-content mb-7 md:mb-0 mt-[410px] md:mt-0 bg-white shadow-4 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
+        class="modal-content mb-7 md:mb-0 mt-[410px] md:mt-0 bg-white shadow-2 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
         <div class="close-button cursor-pointer inline-flex items-center gap-[10px] font-bold text-lg sm:text-2xl text-[#7E5EFF] rtl:font-yekanBakhBold ltr:font-MontserratBold">
           <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
           <h4>اطلاعات حساب کاربری</h4>
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-        <button class="btnHover ltr:ml-auto rtl:mr-auto rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold mt-9 bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
+        <button class="btnHover ltr:ml-auto rtl:mr-auto rounded-[10px] relative font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold mt-9 bg-[#7E5EFF] flex-center gap-2 text-white h-14 px-[13px]">
           <img alt="icon" src="../img/svg/archive-tick.svg">
           <p>ذخیره تغییرات</p>
         </button>
@@ -572,7 +572,9 @@
                   class="mx-auto relative z-10 border-2 border-[#FFFFFF80] rounded-full w-[59px] h-[59px]">
                 <div class="rounded-lg -mt-6 bg-[#FFFFFF33] relative px-4 pb-[10px] pt-14">
                   <!-- shape -->
-                  <img alt="shape" src="../img/svg/Vector 8 (3).svg" class="absolute top-0 inset-x-0 mx-auto">
+                  <svg class="absolute top-0 inset-x-0 mx-auto" width="122" height="34" viewBox="0 0 122 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.56185 0.580141L0 0H122L117.328 0.504607C111.943 1.08619 106.816 3.11482 102.49 6.37519L70.5696 30.4379C64.6809 34.8769 56.521 34.7162 50.8116 30.0488L22.9075 7.23711C18.2497 3.42935 12.5546 1.10997 6.56185 0.580141Z" fill="#7e5eff"/>
+                   </svg>
                   <!--  -->
                   <h6 class="font-bold text-center rtl:font-yekanBakhBold ltr:font-MontserratBold">نگار امینی</h6>
                   <div class="flex-center gap-2 mt-3 text-sm">
@@ -744,7 +746,7 @@
                   <p class="font-semibold">به پنل کاربری خوش آمدید!</p>
                 </div>
               </div>
-              <form class="rounded-[15px] shadow-4 bg-white h-12 p-2 rtl:pr-4 ltr:pl-4 flex items-center gap-2">
+              <form class="rounded-[15px] shadow-13 bg-white h-12 p-2 rtl:pr-4 ltr:pl-4 flex items-center gap-2">
                 <input
                   class="flex-grow w-full outline-none text-sm font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold"
                   placeholder="جستجو ">
@@ -765,7 +767,7 @@
                 <img alt="img" src="../img/Vector 786.png"
                   class="absolute ltr:[transform:rotateY(180deg)] inset-x-0 mx-[14px] w-[85%] h-[38px] -top-[10px]">
                 <!--  -->
-                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-5 text-white p-3 font-semibold">
+                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-14 text-white p-3 font-semibold">
                   <img alt="icon" src="../img/svg/bag-tick.svg">
                   <p>خریدهای موفق</p>
                 </div>
@@ -781,7 +783,7 @@
                 <img alt="img" src="../img/Vector 786.png"
                   class="absolute ltr:[transform:rotateY(180deg)] inset-x-0 mx-[14px] w-[85%] h-[38px] -top-[10px]">
                 <!--  -->
-                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-5 text-white p-3 font-semibold">
+                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-14 text-white p-3 font-semibold">
                   <img alt="icon" src="../img/svg/3d-rotate.svg">
                   <p>در حال پردازش</p>
                 </div>
@@ -797,7 +799,7 @@
                 <img alt="img" src="../img/Vector 786.png"
                   class="absolute ltr:[transform:rotateY(180deg)] inset-x-0 mx-[14px] w-[85%] h-[38px] -top-[10px]">
                 <!--  -->
-                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-5 text-white p-3 font-semibold">
+                <div class="relative flex-center gap-2 rounded-[10px] bg-[#7E5EFF] shadow-14 text-white p-3 font-semibold">
                   <img alt="icon" src="../img/svg/maximize.svg">
                   <p>خریدهای لغو شده</p>
                 </div>
@@ -833,7 +835,7 @@
                     </svg>
                     <p>افزودن آدرس جدید</p>
                   </a>
-                  <div class="rounded-[20px] shadow-4 mt-8 p-5 bg-white">
+                  <div class="rounded-[20px] shadow-13 mt-8 p-5 bg-white">
                     <h5 class="font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold">آدرس گیرنده</h5>
                     <div class="mt-3 flex-between gap-3 flex-wrap">
                       <div class="flex items-center gap-[10px] font-semibold text-sm sm:text-lg text-[#767676]">
@@ -870,15 +872,11 @@
                   <div class="mt-8 grid grid-cols-1 xl:grid-cols-2 gap-6">
                     <div
                       class="border border-[#C7C6C6] flex-col sm:flex-row flex items-center gap-[30px] rounded-[20px] bg-white p-6">
-                      <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                        class="w-[76px] h-[103px] flex-shrink-0">
+                      <img alt="img" src="../img/image 2 (5).png"
+                        class="w-[122px] h-[78px] flex-shrink-0">
                       <div>
-                        <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">کش لس AMP 8200 مدل سیار</p>
+                        <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">تلویزیون سونی مدل X85L</p>
                         <div class="mt-[15px] flex items-center gap-7 font-semibold">
-                          <div class="flex items-center gap-2">
-                            <p>رنگ:</p>
-                            <div class="w-7 h-7 rounded-full bg-[#8BD30C]"></div>
-                          </div>
                           <p>تعداد: ۲ عدد</p>
                         </div>
                         <div class="mt-[10px] flex items-center gap-2">
@@ -890,15 +888,11 @@
                     </div>
                     <div
                       class="border border-[#C7C6C6] flex-col sm:flex-row flex items-center gap-[30px] rounded-[20px] bg-white p-6">
-                      <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                        class="w-[76px] h-[103px] flex-shrink-0">
+                      <img alt="img" src="../img/image 2 (5).png"
+                        class="w-[122px] h-[78px] flex-shrink-0">
                       <div>
-                        <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">کش لس AMP 8200 مدل سیار</p>
+                        <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">تلویزیون سونی مدل X85L</p>
                         <div class="mt-[15px] flex items-center gap-7 font-semibold">
-                          <div class="flex items-center gap-2">
-                            <p>رنگ:</p>
-                            <div class="w-7 h-7 rounded-full bg-[#8BD30C]"></div>
-                          </div>
                           <p>تعداد: ۲ عدد</p>
                         </div>
                         <div class="mt-[10px] flex items-center gap-2">
@@ -1035,12 +1029,12 @@
                             مجدد</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1065,12 +1059,12 @@
                             مجدد</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1095,12 +1089,12 @@
                             مجدد</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1127,12 +1121,12 @@
                             سفارش</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1159,12 +1153,12 @@
                             دوباره</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1189,12 +1183,12 @@
                             دوباره</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1221,12 +1215,12 @@
                             class="bg-[#4F24FF] rounded-[10px] font-bold text-sm text-white py-2 px-8 btnHover">پرداخت</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
@@ -1251,12 +1245,12 @@
                             class="bg-[#4F24FF] rounded-[10px] font-bold text-sm text-white py-2 px-8 btnHover">پرداخت</a>
                         </div>
                         <div class="flex flex-wrap items-center mt-5 gap-8">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
-                          <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png"
-                            class="w-[50px] h-[68px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
+                          <img alt="img" src="../img/image 2 (5).png"
+                            class="w-[82px] h-[52px]">
                         </div>
                         <a class="mt-6 flex items-center justify-end gap-1 font-semibold transition hover:text-[#7E5EFF]">
                           <img alt="icon" src="../img/svg/notepad.svg">
