@@ -191,6 +191,34 @@ var blog = new Swiper(".blog", {
     prevEl: ".swiper-button-prev4",
   }
 });
+// tabs
+
+let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let orderTabs = Array.from(document.querySelectorAll('.tabs p'));
+
+tab.forEach((item) => {
+  item.addEventListener('click', function() {
+      tab.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+  })
+})
+
+orderTabs.forEach((item) => {
+  item.addEventListener('click', function() {
+    orderTabs.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
+})
 
 // acordion
 

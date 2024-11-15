@@ -1243,10 +1243,6 @@ video {
   height: 100px;
 }
 
-.h-\[103px\] {
-  height: 103px;
-}
-
 .h-\[107px\] {
   height: 107px;
 }
@@ -1631,12 +1627,12 @@ video {
   width: 75px;
 }
 
-.w-\[76px\] {
-  width: 76px;
-}
-
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[82px\] {
+  width: 82px;
 }
 
 .w-\[83px\] {
@@ -1681,10 +1677,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[82px\] {
-  width: 82px;
 }
 
 .min-w-\[460px\] {
@@ -2273,11 +2265,6 @@ video {
 .bg-\[\#7e5eff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(126 94 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#8BD30C\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(139 211 12 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#C75EFF\] {
@@ -3306,6 +3293,7 @@ a {
 .btnHover {
   transition: all .4s;
   overflow: hidden;
+  position: relative;
 }
 
 .btnHover::before {
@@ -3575,6 +3563,66 @@ input[type="number"] {
   scrollbar-width: thin;
   scrollbar-color: #7476ED #E9E9E9;
   scroll-margin: 29px 0;
+}
+
+/* tab */
+
+.tabs p.active{
+  color: #4f24ff;
+}
+
+.tabContent > div{
+  display: none;
+  animation: in 1s;
+  transform-origin: top left;
+}
+
+.tabContent > div.active{
+  display: block;
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg)
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg)
+  }
+}
+
+/* sidebar */
+
+:is([dir="ltr"] .sidebar.active) {
+  left: 0px;
+}
+
+:is([dir="rtl"] .sidebar.active) {
+  right: 0px;
+}
+
+.sidebar ul li a.active{
+  color: white;
+}
+
+.sidebar ul li a.active img:first-child {
+  visibility: visible;
+  opacity: 1;
+}
+
+:is([dir="ltr"] .sidebar ul li a.active img:first-child) {
+  left: -1.5rem;
+}
+
+:is([dir="rtl"] .sidebar ul li a.active img:first-child) {
+  right: -1.5rem;
+}
+
+.sidebar ul li a.active svg path{
+  fill: white;
+  stroke: white;
 }
 
 @media only screen and (max-width: 576px) {
