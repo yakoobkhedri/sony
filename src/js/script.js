@@ -265,6 +265,7 @@ $(".compare-product").click(function (e) {
   e.preventDefault();
   $(".compare-modal").removeClass("hidden");
   const compareId = $(this).attr("compare-id");
+  const compareInch = $(this).attr("compare-inch");
   const compareTitle = $(this).attr("compare-title");
   const compareImg = $(this).attr("compare-img");
   const price = $(this).attr("compare-price");
@@ -281,7 +282,7 @@ $(".compare-product").click(function (e) {
                   <path d="M21.2133 21.2133L12.728 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
                 <div class="flex items-center gap-2.5">
-                  <p class="text-lg font-semibold text-[#4A4A4A]">55”</p>
+                  <p class="text-lg font-semibold text-[#4A4A4A]">${compareInch}”</p>
                   <img alt="icon" src="../img/svg/image 4.svg" class="w-7 h-7">
                 </div>
               </div>
