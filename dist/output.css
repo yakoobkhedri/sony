@@ -4997,6 +4997,10 @@ input[type="number"] {
     height: auto;
   }
 
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
   .sm\:w-11 {
     width: 2.75rem;
   }
@@ -5057,6 +5061,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .sm\:w-\[292px\] {
+    width: 292px;
+  }
+
   .sm\:max-w-\[405px\] {
     max-width: 405px;
   }
@@ -5111,6 +5119,10 @@ input[type="number"] {
 
   .sm\:gap-\[18px\] {
     gap: 18px;
+  }
+
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
 
   .sm\:gap-x-7 {
