@@ -253,6 +253,17 @@ a {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.otpInput[disabled="true"]{
+  border: 1.4px solid #EEF1FA;
+}
+.otpInput[disabled="false"]{
+  border: 1.4px solid #7E5EFF;
+  color: #7E5EFF;
+}
+.otpInput[disabled=""]{
+  border: 1.4px solid #7E5EFF;
+  color: #7E5EFF;
+}
 /* editor section */
 .editorSection ul {
   @apply rtl:mr-4 ltr:ml-4 rtl:pr-6 ltr:pl-6;
