@@ -108,7 +108,7 @@ var mostSell2 = new Swiper(".mostSell2", {
 var tvSize = new Swiper(".tvSize", {
   slidesPerView: 1.3,
   spaceBetween: 50,
-  // autoplay: true,
+  autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -190,6 +190,25 @@ var blog = new Swiper(".blog", {
     nextEl: ".swiper-button-next4",
     prevEl: ".swiper-button-prev4",
   }
+});
+var othersizeSwiper = new Swiper(".othersizeSwiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 14,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 4.8,
+    }
+  },
 });
 // tabs
 
