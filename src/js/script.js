@@ -210,6 +210,18 @@ var othersizeSwiper = new Swiper(".othersizeSwiper", {
     }
   },
 });
+
+// select size
+
+let size = Array.from(document.getElementsByClassName('size'));
+
+size.forEach((item)=>{
+  item.addEventListener('click',function () {
+    size.forEach((items)=>{items.classList.remove('active')});
+    item.classList.add('active');
+  })
+})
+
 // tabs
 
 let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
