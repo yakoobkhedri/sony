@@ -210,7 +210,20 @@ var othersizeSwiper = new Swiper(".othersizeSwiper", {
     }
   },
 });
-
+var mySwiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 18,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 18,
+  thumbs: {
+    swiper: mySwiper,
+  },
+});
 // select size
 
 let size = Array.from(document.getElementsByClassName('size'));
