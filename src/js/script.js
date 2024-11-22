@@ -237,16 +237,11 @@ size.forEach((item)=>{
 
 // tabs
 
-let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
-let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
-let orderTabs = Array.from(document.querySelectorAll('.tabs p'));
 
-tab.forEach((item) => {
-  item.addEventListener('click', function () {
-    tab.forEach((items) => { items.classList.remove('active') });
-    item.classList.add('active');
-  })
-})
+let orderTabs = Array.from(document.querySelectorAll('.tabs p'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let tabs = Array.from(document.querySelectorAll('.tabs2 > div'));
+let tabContent2 = Array.from(document.querySelectorAll('.tabContent2 > div > div'));
 
 orderTabs.forEach((item) => {
   item.addEventListener('click', function () {
@@ -254,6 +249,22 @@ orderTabs.forEach((item) => {
     item.classList.add('active');
     let tabId = item.dataset.id;
     tabContent.forEach((content) => {
+      let contentId = content.dataset.id;
+      if (tabId === contentId) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    })
+  })
+})
+
+tabs.forEach((item) => {
+  item.addEventListener('click', function () {
+    tabs.forEach((items) => { items.classList.remove('active') });
+    item.classList.add('active');
+    let tabId = item.dataset.id;
+    tabContent2.forEach((content) => {
       let contentId = content.dataset.id;
       if (tabId === contentId) {
         content.classList.add('active');

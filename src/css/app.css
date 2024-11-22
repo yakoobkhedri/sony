@@ -424,12 +424,47 @@ input[type="number"] {
 .tabs p.active{
   color: #4f24ff;
 }
-.tabContent > div{
+.tabs2 div p{
+  position: relative;
+}
+.tabs2 div p::after{
+  content: url('../src/img/Vector 790.png');
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .4s;
+  opacity: 0;
+}
+.tabs2 div p::after{
+  @apply rtl:-right-[25px] rtl:left-0 ltr:-left-[66px] ltr:right-0;
+}
+.tabs2 div:nth-child(2) p::after,.tabs2 div:nth-child(3) p::after,.tabs2 div:nth-child(4) p::after{
+  @apply rtl:-right-[171px] rtl:left-0 ltr:-left-[171px] ltr:right-0;
+}
+.tabs2 div:hover p::after,.tabs2 div.active p::after{
+  bottom: -50px;
+  opacity: 100%;
+}
+.tabs2 div:hover p::after,.tabs2 div.active p::after{
+ @apply ltr:-bottom-[49px];
+}
+.tabs2 div.active{
+  color: #363636;
+}
+.tabs2 div svg path{
+  stroke: #B0B7BF;
+}
+.tabs2 div.active svg path{
+  stroke: #292D32;
+}
+.tabContent > div,.tabContent2 > div > div{
   display: none;
   animation: in 1s;
   transform-origin: top left;
 }
-.tabContent > div.active{
+.tabContent > div.active,.tabContent2 > div > div.active{
   display: block;
 }
 

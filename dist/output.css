@@ -1236,12 +1236,20 @@ video {
   margin-top: 50px;
 }
 
+.mt-\[58px\] {
+  margin-top: 58px;
+}
+
 .mt-\[641px\] {
   margin-top: 641px;
 }
 
 .mt-\[70px\] {
   margin-top: 70px;
+}
+
+.mt-\[77px\] {
+  margin-top: 77px;
 }
 
 .mt-\[87px\] {
@@ -1572,10 +1580,6 @@ video {
 
 .h-\[89px\] {
   height: 89px;
-}
-
-.h-\[90px\] {
-  height: 90px;
 }
 
 .h-\[9px\] {
@@ -2033,6 +2037,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2125,6 +2133,10 @@ video {
   gap: 14px;
 }
 
+.gap-\[152px\] {
+  gap: 152px;
+}
+
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -2151,6 +2163,10 @@ video {
 
 .gap-\[6px\] {
   gap: 6px;
+}
+
+.gap-\[71px\] {
+  gap: 71px;
 }
 
 .gap-\[9px\] {
@@ -2774,6 +2790,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2897,6 +2918,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
 .py-8 {
@@ -3222,6 +3248,14 @@ video {
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-9 {
+  line-height: 2.25rem;
+}
+
+.leading-\[38px\] {
+  line-height: 38px;
 }
 
 .text-\[\#000000\] {
@@ -4022,13 +4056,69 @@ input[type="number"] {
   color: #4f24ff;
 }
 
-.tabContent > div{
+.tabs2 div p{
+  position: relative;
+}
+
+.tabs2 div p::after{
+  content: url('../src/img/Vector 790.png');
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .4s;
+  opacity: 0;
+}
+
+:is([dir="ltr"] .tabs2 div p)::after {
+  left: -66px;
+  right: 0px;
+}
+
+:is([dir="rtl"] .tabs2 div p)::after {
+  right: -25px;
+  left: 0px;
+}
+
+:is([dir="ltr"] .tabs2 div:nth-child(2) p)::after,:is([dir="ltr"] .tabs2 div:nth-child(3) p)::after,:is([dir="ltr"] .tabs2 div:nth-child(4) p)::after {
+  left: -171px;
+  right: 0px;
+}
+
+:is([dir="rtl"] .tabs2 div:nth-child(2) p)::after,:is([dir="rtl"] .tabs2 div:nth-child(3) p)::after,:is([dir="rtl"] .tabs2 div:nth-child(4) p)::after {
+  right: -171px;
+  left: 0px;
+}
+
+.tabs2 div:hover p::after,.tabs2 div.active p::after{
+  bottom: -50px;
+  opacity: 100%;
+}
+
+:is([dir="ltr"] .tabs2 div:hover p)::after,:is([dir="ltr"] .tabs2 div.active p)::after {
+  bottom: -49px;
+}
+
+.tabs2 div.active{
+  color: #363636;
+}
+
+.tabs2 div svg path{
+  stroke: #B0B7BF;
+}
+
+.tabs2 div.active svg path{
+  stroke: #292D32;
+}
+
+.tabContent > div,.tabContent2 > div > div{
   display: none;
   animation: in 1s;
   transform-origin: top left;
 }
 
-.tabContent > div.active{
+.tabContent > div.active,.tabContent2 > div > div.active{
   display: block;
 }
 
@@ -4144,6 +4234,11 @@ input[type="number"] {
   transition-duration: 150ms;
 }
 
+.after\:\!-right-\[73px\]::after {
+  content: var(--tw-content);
+  right: -73px !important;
+}
+
 .after\:content-none::after {
   --tw-content: none;
   content: var(--tw-content);
@@ -4172,6 +4267,11 @@ input[type="number"] {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-\[\#363636\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(54 54 54 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#7476ED\]:hover {
@@ -4255,6 +4355,10 @@ input[type="number"] {
 
 .group:hover .group-hover\:fill-white {
   fill: #fff;
+}
+
+.group:hover .group-hover\:stroke-\[\#292D32\] {
+  stroke: #292D32;
 }
 
 .group:hover .group-hover\:stroke-\[\#6d74e1\] {
