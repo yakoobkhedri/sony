@@ -224,6 +224,25 @@ var mySwiper2 = new Swiper(".mySwiper2", {
     swiper: mySwiper,
   },
 });
+
+var films = new Swiper(".films", {
+  slidesPerView: 1.2,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3.3,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next4",
+    prevEl: ".swiper-button-prev4",
+  }
+});
+
 // select size
 
 let size = Array.from(document.getElementsByClassName('size'));
