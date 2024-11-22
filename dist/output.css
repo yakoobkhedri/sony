@@ -939,6 +939,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
 .\!mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -2778,6 +2782,10 @@ video {
 
 .p-\[22px\] {
   padding: 22px;
+}
+
+.p-\[14px\] {
+  padding: 14px;
 }
 
 .px-1 {
