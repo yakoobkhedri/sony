@@ -212,10 +212,21 @@ var othersizeSwiper = new Swiper(".othersizeSwiper", {
 });
 var mySwiper = new Swiper(".mySwiper", {
   loop: true,
-  spaceBetween: 18,
+  spaceBetween: 12,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 6,
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  },
 });
 var mySwiper2 = new Swiper(".mySwiper2", {
   loop: true,
@@ -331,3 +342,8 @@ acordionBtn2.forEach((item) => {
   })
 })
 
+// fancybox
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
