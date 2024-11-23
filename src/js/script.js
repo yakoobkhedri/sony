@@ -217,7 +217,7 @@ var mySwiper = new Swiper(".mySwiper", {
   freeMode: true,
   watchSlidesProgress: true,
   breakpoints: {
-    576: {
+    400: {
       slidesPerView: 4,
     },
     768: {
@@ -341,9 +341,3 @@ acordionBtn2.forEach((item) => {
     item.querySelector('img').classList.toggle('active');
   })
 })
-
-// fancybox
-
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});

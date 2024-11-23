@@ -12,15 +12,15 @@
 
 <body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-MontserratRegular">
 
-   <!-- login modal -->
-   <div class="modal">
+  <!-- login modal -->
+  <div class="modal">
     <div style="visibility: hidden; opacity: 0;" data-button="login-modal"
-    class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
-    <div
-      class="modal-content bg-white max-w-[1178px] w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
-      <form id="loginForm">
+      class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
+      <div
+        class="modal-content bg-white max-w-[1178px] w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
+        <form id="loginForm">
           <p class="font-bold text-[29px] rtl:font-RokhBold ltr:font-MontserratBold mt-2 sm:mt-5 mb-1">
-          خوش آمدید
+            خوش آمدید
           </p>
           <p class="text-lg sm:text-2xl font-medium rtl:font-RokhBold ltr:font-MontserratBold">
             فروشگاه سونی در خدمت شماست
@@ -28,29 +28,42 @@
           <div class="mt-9">
             <div class="rounded-[10px] border border-[#EEF1FA] px-3 py-4 h-16 flex items-center justify-between gap-2">
               <input placeholder="شماره موبایل" class="outline-none flex-grow-1 w-full text-sm font-bold">
-              <p class="text-sm font-bold text-[#7E5EFF] cursor-pointer rtl:font-RokhBold ltr:font-MontserratBold flex-shrink-0">دریافت کد تایید</p>
+              <p
+                class="text-sm font-bold text-[#7E5EFF] cursor-pointer rtl:font-RokhBold ltr:font-MontserratBold flex-shrink-0">
+                دریافت کد تایید</p>
             </div>
-            <div class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3" dir="ltr">
-              <input type="number" maxlength="1" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-             </div>
-             <input type="hidden" id="otpHiddenInput">
-             <div class="flex items-center gap-3 flex-grow mt-9">
-              <div class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
-                  856985
+            <div
+              class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3"
+              dir="ltr">
+              <input type="number" maxlength="1"
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+            </div>
+            <input type="hidden" id="otpHiddenInput">
+            <div class="flex items-center gap-3 flex-grow mt-9">
+              <div
+                class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
+                856985
               </div>
-              <div class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
-                  <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
-                  <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
+              <div
+                class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
+                <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
+                <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
               </div>
-             </div>
-             <label class="flex items-center gap-2 cursor-pointer mt-8">
+            </div>
+            <label class="flex items-center gap-2 cursor-pointer mt-8">
               <div class="inline-flex items-center gap-2">
                 <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
-                  <input name="type" type="checkbox" class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
-                  <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                  <input name="type" type="checkbox"
+                    class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10"
+                    id="black">
+                  <span
+                    class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                     <div class="w-6 h-6 rounded-[5px] bg-[#7E5EFF]"></div>
                   </span>
                 </label>
@@ -58,15 +71,16 @@
                   مرا به یاد داشته باش</p>
               </div>
             </label>
-            <a class="rounded-[10px] btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-PeydaBold ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</a>
+            <a
+              class="rounded-[10px] btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-PeydaBold ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</a>
           </div>
-      </form>
-      <div class="hidden md:block">
-        <img alt="img" src="../img/Mask group (2).jpg" class="w-full h-full">
+        </form>
+        <div class="hidden md:block">
+          <img alt="img" src="../img/Mask group (2).jpg" class="w-full h-full">
+        </div>
       </div>
     </div>
   </div>
-   </div>
 
   <!-- shape -->
   <img alt="shape" src="../img/Shape.png"
@@ -434,579 +448,703 @@
   <main class="relative">
 
     <!-- other sizes -->
-     <section class="lg:mt-[50px]">
-       <div class="max-w-content mx-auto px-4">
-         <div class="bg-white rounded-[18px] shadow-12 rtl:pr-3 ltr:pl-3 pb-4 pt-[12px]">
-           <div class="swiper othersizeSwiper pt-24 pb-4">
-             <div class="swiper-wrapper">
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+    <section class="mt-16">
+      <div class="max-w-content mx-auto px-4">
+        <div class="bg-white rounded-[18px] shadow-12 rtl:pr-3 ltr:pl-3 pb-4 pt-[12px]">
+          <div class="relative sm:top-[-53px] -top-[42px] sm:h-20 h-16 w-[256px] sm:w-[367px] flex-center">
+            <img alt="bg" src="../img/Rectangle 582.png" class="absolute w-full h-full ltr:[transform:rotateY(180deg)]">
+            <p class="text-white sm:text-2xl font-bold relative rtl:-right-4 ltr:-left-4">سایزهای دیگر این محصول</p>
+          </div>
+          <div class="swiper othersizeSwiper pt-24 pb-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-               <div class="swiper-slide">
-                 <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
-                   <div class="flex items-start -mt-[53px]">
-                     <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
-                     <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="border border-[#F4F4F4] rounded-[20px] p-4 rtl:pl-[66px] ltr:pr-[66px]">
+                  <div class="flex items-start -mt-[53px]">
+                    <img alt="img" src="../img/image 2 (3).png" class="flex-grow block h-[132px]">
+                    <div class="flex-shrink-0 relative flex-center -top-3 rtl:-mr-9 ltr:-ml-9">
                       <p class="font-bold text-[28px] text-white absolute z-10">55” </p>
                       <img alt="img" src="../img/Ellipse 35.png" class="ltr:[transform:rotateY(180deg)]">
-                     </div>
-                   </div>
-                   <a class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
+                    </div>
+                  </div>
+                  <a
+                    class="btnHover relative block w-9 overflow-hidden mt-3 rtl:mr-auto ltr:ml-auto ltr:-right-10 rtl:-left-10 ltr:[transform:rotateY(180deg)]">
                     <img alt="icon" src="../img/svg/arrow-left (3).svg">
-                   </a>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-     <!-- product details -->
-      <section class="lg:mt-16 mt-6">
-        <div class="max-w-content mx-auto px-4">
-          <div class="rounded-[18px] bg-white shadow-12 sm:pt-9 pt-3 pb-16">
-            <div class="sm:px-6 px-3 grid grid-cols-12 gap-6">
-              <div class="xl:col-span-4 lg:col-span-6 col-span-12">
-                <div class="bg-white shadow-12 rounded-[18px] pt-8 pb-10">
-                  <div class="flex items-center justify-between gap-2 px-[22px] mb-[60px]">
-                   <a class="w-[42px] h-[42px] rounded-[10px] group bg-white transition hover:bg-[#7E5EFF] border border-[#E9E9E9] flex-center">
+    <!-- product details -->
+    <section class="lg:mt-16 mt-6">
+      <div class="max-w-content mx-auto px-4">
+        <div class="rounded-[18px] bg-white shadow-12 sm:pt-9 pt-3 sm:pb-16 pb-4">
+          <div class="sm:px-6 px-3 grid grid-cols-12 gap-x-0 lg:gap-x-6 gap-6">
+            <div class="xl:col-span-4 lg:col-span-6 col-span-12">
+              <div class="bg-white shadow-12 rounded-[18px] pt-8 sm:pb-10 pb-5">
+                <div class="flex items-center justify-between gap-2 px-[22px] mb-5 sm:mb-[60px]">
+                  <a
+                    class="w-[42px] h-[42px] rounded-[10px] group bg-white transition hover:bg-[#7E5EFF] border border-[#E9E9E9] flex-center">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="transition group-hover:stroke-white" d="M9 12C9 12.663 8.73661 13.2989 8.26777 13.7678C7.79893 14.2366 7.16304 14.5 6.5 14.5C5.83696 14.5 5.20107 14.2366 4.73223 13.7678C4.26339 13.2989 4 12.663 4 12C4 11.337 4.26339 10.7011 4.73223 10.2322C5.20107 9.76339 5.83696 9.5 6.5 9.5C7.16304 9.5 7.79893 9.76339 8.26777 10.2322C8.73661 10.7011 9 11.337 9 12Z" stroke="#424242" stroke-width="1.5"/>
-                      <path class="transition group-hover:stroke-white" d="M14 6.5L9 10M14 17.5L9 14" stroke="#424242" stroke-width="1.5" stroke-linecap="round"/>
-                      <path class="transition group-hover:stroke-white" d="M19 18.5C19 19.163 18.7366 19.7989 18.2678 20.2678C17.7989 20.7366 17.163 21 16.5 21C15.837 21 15.2011 20.7366 14.7322 20.2678C14.2634 19.7989 14 19.163 14 18.5C14 17.837 14.2634 17.2011 14.7322 16.7322C15.2011 16.2634 15.837 16 16.5 16C17.163 16 17.7989 16.2634 18.2678 16.7322C18.7366 17.2011 19 17.837 19 18.5ZM19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.837 8 15.2011 7.73661 14.7322 7.26777C14.2634 6.79893 14 6.16304 14 5.5C14 4.83696 14.2634 4.20107 14.7322 3.73223C15.2011 3.26339 15.837 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5Z" stroke="#424242" stroke-width="1.5"/>
+                      <path class="transition group-hover:stroke-white"
+                        d="M9 12C9 12.663 8.73661 13.2989 8.26777 13.7678C7.79893 14.2366 7.16304 14.5 6.5 14.5C5.83696 14.5 5.20107 14.2366 4.73223 13.7678C4.26339 13.2989 4 12.663 4 12C4 11.337 4.26339 10.7011 4.73223 10.2322C5.20107 9.76339 5.83696 9.5 6.5 9.5C7.16304 9.5 7.79893 9.76339 8.26777 10.2322C8.73661 10.7011 9 11.337 9 12Z"
+                        stroke="#424242" stroke-width="1.5" />
+                      <path class="transition group-hover:stroke-white" d="M14 6.5L9 10M14 17.5L9 14" stroke="#424242"
+                        stroke-width="1.5" stroke-linecap="round" />
+                      <path class="transition group-hover:stroke-white"
+                        d="M19 18.5C19 19.163 18.7366 19.7989 18.2678 20.2678C17.7989 20.7366 17.163 21 16.5 21C15.837 21 15.2011 20.7366 14.7322 20.2678C14.2634 19.7989 14 19.163 14 18.5C14 17.837 14.2634 17.2011 14.7322 16.7322C15.2011 16.2634 15.837 16 16.5 16C17.163 16 17.7989 16.2634 18.2678 16.7322C18.7366 17.2011 19 17.837 19 18.5ZM19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.837 8 15.2011 7.73661 14.7322 7.26777C14.2634 6.79893 14 6.16304 14 5.5C14 4.83696 14.2634 4.20107 14.7322 3.73223C15.2011 3.26339 15.837 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5Z"
+                        stroke="#424242" stroke-width="1.5" />
                     </svg>
-                   </a>
-                   <div class="flex items-center justify-end gap-2.5">
+                  </a>
+                  <div class="flex items-center justify-end gap-2.5">
                     <p class="text-lg font-semibold text-[#4A4A4A]">55”</p>
                     <img alt="icon" src="../img/svg/image 4.svg" class="w-7 h-7">
                   </div>
-                  </div>
-                  <div class="lg:px-[72px] px-5">
-                    <div dir="ltr" class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                          <div class="swiper-slide flex-center">
-                            <img src="../img/image 2 (3).png"
-                              class="h-[202px] w-[318px]" />
-                          </div>
-                        </div>
+                </div>
+                <div class="lg:px-[72px] px-5">
+                  <div dir="ltr" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <img src="../img/image 2 (3).png" class="sm:h-[202px] h-[137px] w-[318px]" />
+                      </div>
                     </div>
-                    <div dir="ltr" class="swiper mySwiper mt-11 pb-2 px-1">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                  </div>
+                  <div dir="ltr" class="swiper mySwiper mt-6 sm:mt-11 pb-2 px-1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
-                        <div class="swiper-slide transition cursor-pointer flex-center">
-                          <div class="flex-center bg-white w-full h-20 px-3 transition rounded-[10px] border border-[#E9E9E9]">
-                              <img src="../img/image 2 (3).png" class="w-full h-11" />
-                          </div>
+                      </div>
+                      <div class="swiper-slide transition cursor-pointer flex-center">
+                        <div
+                          class="flex-center bg-white w-full sm:h-20 h-14 px-3 transition rounded-[10px] border border-[#E9E9E9]">
+                          <img src="../img/image 2 (3).png" class="w-full sm:h-11 h-8" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="bg-[#7E5EFF] rounded-b-[11px] h-[10px] mx-7"></div>
               </div>
-              <div class="col-span-12 xl:col-span-4 xl:order-1 lg:order-last order-1">
-                <h4 class="font-bold text-[22px] mt-5">تلویزیون سونی مدل  محصول 2023X85L </h4>
-                <img alt="img" src="../img/Line 61.png" class="w-full h-[1px] block mt-[22px]">
-                <div class="flex items-center gap-12 mt-3 font-medium">
-                  <div class="flex items-center gap-1">
-                   <p class="text-lg">نام تجاری:</p>
-                   <p class="text-2xl">SONY</p>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <p class="text-lg">دسته بندی:</p>
-                    <p class="text-2xl">تلویزیون</p>
-                   </div>
+              <div class="bg-[#7E5EFF] rounded-b-[11px] h-[10px] mx-7"></div>
+            </div>
+            <div class="col-span-12 xl:col-span-4 xl:order-1 lg:order-last order-1">
+              <h4 class="font-bold text-lg sm:text-[22px] sm:mt-5 mt-1">تلویزیون سونی مدل محصول 2023X85L </h4>
+              <img alt="img" src="../img/Line 61.png" class="w-full h-[1px] block mt-3 sm:mt-[22px]">
+              <div class="flex flex-wrap items-center gap-4 sm:gap-12 mt-3 font-bold">
+                <div class="flex items-center gap-1">
+                  <p class="sm:text-lg">نام تجاری:</p>
+                  <p class="text-xl sm:text-2xl">SONY</p>
                 </div>
-                <div class="mt-[22px] rounded-[10px] bg-[#FAF9FF] p-5 text-lg">
-                  <p class="font-bold">ویژگی های کالا:</p>
-                  <div class="grid grid-cols-2 mt-[18px]">
-                    <p>سایز (اینچ) : </p>
-                    <p class="font-bold text-xl">55</p>
-                  </div>
-                  <div class="grid grid-cols-2 mt-[18px]">
-                    <p>سیستم عامل :</p>
-                    <p class="font-bold text-xl"> Android TV</p>
-                  </div>
-                  <div class="grid grid-cols-2 mt-[18px]">
-                    <p>کیفیت تصویر:</p>
-                    <p class="font-bold text-xl">4K</p>
-                  </div>
-                  <div class="grid grid-cols-2 mt-[18px]">
-                    <p>کیفیت تصویر:</p>
-                    <p class="font-bold text-xl">4K</p>
-                  </div>
-                  <div class="grid grid-cols-2 mt-[18px]">
-                    <p>کیفیت تصویر:</p>
-                    <p class="font-bold text-xl">4K</p>
-                  </div>
+                <div class="flex items-center gap-1">
+                  <p class="sm:text-lg">دسته بندی:</p>
+                  <p class="text-xl sm:text-2xl">تلویزیون</p>
                 </div>
-                <form class="mt-5">
-                  <p class="font-bold text-lg">انتخاب سایز:</p>
-                  <div class="mt-4 flex items-center gap-3 font-bold">
-                    <div class="active size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
-                      <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-                      55” 
-                    </div>
-                    <div class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
-                      <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-                      65” 
-                    </div>
-                    <div class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
-                      <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-                      75” 
-                    </div>
-                    <div class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
-                      <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-                      85” 
-                    </div>
-                    <div class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
-                      <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
-                      95” 
-                    </div>
-                  </div>
-                </form>
               </div>
-              <div class="xl:col-span-4 lg:col-span-6 col-span-12 xl:order-last lg:order-1 order-last">
-                <form class="bg-white sm:px-6 px-3 py-4 rounded-[18px] shadow-12">
-                   <div class="grid grid-cols-2 items-center gap-2 border-b border-[#F0F0F0] pb-3">
-                     <img alt="img" src="../img/Logo 1.png" class="w-[90px] h-4">
-                     <div class="flex items-end gap-[14px]">
-                      <div class="w-11 h-11 rounded-[5px] bg-[#FAF9FF] flex-center">
-                        <img alt="icon" src="../img/svg/star.svg">
+              <div class="mt-[22px] rounded-[10px] bg-[#FAF9FF] sm:p-5 p-4 sm:text-lg">
+                <p class="font-bold">ویژگی های کالا:</p>
+                <div class="grid grid-cols-2 mt-[18px]">
+                  <p>سایز (اینچ) : </p>
+                  <p class="font-bold text-lg sm:text-xl">55</p>
+                </div>
+                <div class="grid grid-cols-2 mt-[18px]">
+                  <p>سیستم عامل :</p>
+                  <p class="font-bold text-lg sm:text-xl"> Android TV</p>
+                </div>
+                <div class="grid grid-cols-2 mt-[18px]">
+                  <p>کیفیت تصویر:</p>
+                  <p class="font-bold text-lg sm:text-xl">4K</p>
+                </div>
+                <div class="grid grid-cols-2 mt-[18px]">
+                  <p>کیفیت تصویر:</p>
+                  <p class="font-bold text-lg sm:text-xl">4K</p>
+                </div>
+                <div class="grid grid-cols-2 mt-[18px]">
+                  <p>کیفیت تصویر:</p>
+                  <p class="font-bold text-lg sm:text-xl">4K</p>
+                </div>
+              </div>
+              <form class="mt-5">
+                <p class="font-bold text-lg">انتخاب سایز:</p>
+                <div class="mt-4 flex flex-wrap items-center gap-3 font-bold">
+                  <div
+                    class="active size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
+                    <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                    55” 
+                  </div>
+                  <div
+                    class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
+                    <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                    65” 
+                  </div>
+                  <div
+                    class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
+                    <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                    75” 
+                  </div>
+                  <div
+                    class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
+                    <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                    85” 
+                  </div>
+                  <div
+                    class="size w-[42px] h-[42px] rounded-[5px] border border-[#E9E9E9] flex-center relative cursor-pointer">
+                    <input type="radio" name="size" class="absolute inset-0 opacity-0 w-full h-full cursor-pointer">
+                    95” 
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="xl:col-span-4 lg:col-span-6 col-span-12 xl:order-last lg:order-1 order-last">
+              <form class="bg-white sm:px-6 px-3 py-4 rounded-[18px] shadow-12">
+                <div
+                  class="sm:grid flex flex-wrap grid-cols-2 justify-between items-center sm:gap-2 gap-5 border-b border-[#F0F0F0] pb-3">
+                  <img alt="img" src="../img/Logo 1.png" class="w-[90px] h-4">
+                  <div class="flex items-end gap-[14px]">
+                    <div class="w-11 h-11 rounded-[5px] bg-[#FAF9FF] flex-center">
+                      <img alt="icon" src="../img/svg/star.svg">
+                    </div>
+                    <div>
+                      <p class="text-sm">
+                        امتیاز :
+                        <span class="font-bold text-[#7E5EFF]">4.9</span>
+                      </p>
+                      <p class="mt-1 text-sm font-semibold">233 دیدگاه</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="flex items-center gap-[5px]">
+                    <div class="w-11 h-11 rounded-[5px] bg-[#FAF9FF] flex-center">
+                      <img alt="icon" src="../img/svg/medal (2).svg">
+                    </div>
+                    <select class="flex-grow font-bold rounded-[5px] bg-[#F4F4F4] h-11 px-4">
+                      <option>انتخاب گارانتی</option>
+                      <option>انتخاب گارانتی</option>
+                    </select>
+                  </div>
+                  <a
+                    class="bg-[#FAF9FF] mt-2 py-3 text-[#7E5EFF] btnHover rounded-[5px] flex-center gap-3 text-sm font-semibold ">
+                    <p>اطلاعات بیشتر در مورد گارانتی</p>
+                    <img alt="icon" src="../img/svg/arrow-left (4).svg"
+                      class="flex-shrink-0 ltr:[transform:rotateY(180deg)]">
+                  </a>
+                  <div
+                    class="mt-4 rounded-[5px] overflow-hidden border-dashed border-2 border-[#E1E1E1] p-3 pt-[18px] bg-[#FAF9FF]">
+                    <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-7">
+                      <div
+                        class="bg-[#E56F8C] flex-shrink-0 w-12 h-9 rtl:-mr-[14px] ltr:-ml-[14px] rtl:rounded-l-[15px] ltr:rounded-r-[15px] text-white font-bold text-[22px] flex-center">
+                        10%</div>
+                      <p class="font-bold text-[#B0B7BF] line-through">65/200/00</p>
+                      <div class="flex flex-wrap items-center gap-1 font-bold">
+                        <p class="text-[22px] text-[#E56F8C]">63/200/000</p>
+                        <p class="text-sm text-[#363636]">تومان</p>
+                      </div>
+                    </div>
+                    <p class="mt-4 text-sm font-bold">هزینه ارسال اضافه خواهد شد.</p>
+                    <div class="flex items-center gap-[11px] mt-[14px]">
+                      <div class="w-11 h-11 rounded-[5px] bg-white flex-center flex-shrink-0">
+                        <img alt="icon" src="../img/svg/clock.svg">
                       </div>
                       <div>
                         <p class="text-sm">
-                          امتیاز :
-                           <span class="font-bold text-[#7E5EFF]">4.9</span>
+                          آخرین زمان بروزرسانی قیمت
                         </p>
-                        <p class="mt-1 text-sm font-semibold">233 دیدگاه</p>
-                      </div>
-                     </div>
-                   </div>
-                   <div class="mt-4">
-                     <div class="flex items-center gap-[5px]">
-                      <div class="w-11 h-11 rounded-[5px] bg-[#FAF9FF] flex-center">
-                        <img alt="icon" src="../img/svg/medal (2).svg">
-                      </div>
-                      <select class="flex-grow font-bold rounded-[5px] bg-[#F4F4F4] h-11 px-4">
-                        <option>انتخاب گارانتی</option>
-                        <option>انتخاب گارانتی</option>
-                      </select>
-                     </div>
-                     <a class="bg-[#FAF9FF] mt-2 py-3 text-[#7E5EFF] btnHover rounded-[5px] flex-center gap-3 text-sm font-semibold ">
-                       <p>اطلاعات بیشتر در مورد گارانتی</p>
-                       <img alt="icon" src="../img/svg/arrow-left (4).svg" class="flex-shrink-0">
-                     </a>
-                     <div class="mt-4 rounded-[5px] overflow-hidden border-dashed border-2 border-[#E1E1E1] p-3 pt-[18px] bg-[#FAF9FF]">
-                       <div class="flex flex-wrap lg:flex-nowrap items-center justify-between gap-7">
-                        <div class="bg-[#E56F8C] flex-shrink-0 w-12 h-9 rtl:-mr-[14px] ltr:-ml-[14px] ltr:[transform:rotateY(180deg)] rtl:rounded-l-[15px] ltr:rounded-r-[15px] text-white font-bold text-[22px] flex-center">10%</div>
-                         <p class="font-bold text-[#B0B7BF] line-through">65/200/00</p>
-                         <div class="flex flex-wrap items-center gap-1 font-bold">
-                          <p class="text-[22px] text-[#E56F8C]">63/200/000</p>
-                          <p class="text-sm text-[#363636]">تومان</p>
-                         </div>
-                       </div>
-                       <p class="mt-4 text-sm font-bold">هزینه ارسال اضافه خواهد شد.</p>
-                       <div class="flex items-center gap-[11px] mt-[14px]">
-                        <div class="w-11 h-11 rounded-[5px] bg-white flex-center">
-                          <img alt="icon" src="../img/svg/clock.svg">
-                        </div>
-                        <div>
-                          <p class="text-sm">
-                            آخرین زمان بروزرسانی قیمت
-                          </p>
-                          <p class="mt-2 text-sm font-semibold">28 آبان 1403  11:28</p>
-                        </div>
-                       </div>
-                     </div>
-                     <button class="rounded-[5px] bg-blue2 h-[60px] w-full btnHover mt-3 flex items-center justify-center gap-2.5 text-white relative text-sm font-bold">
-                      <img alt="icon" src="../img/svg/shop-add.svg">
-                      <p>افزودن به سبد خرید</p>
-                     </button>
-                     <div class="flex items-center justify-between gap-[14px] mt-3">
-                       <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
-                        <img alt="icon" src="../img/svg/call-calling (2).svg" class="w-8 h-8 mx-auto">
-                        <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">تماس با ما</p>
-                       </a>
-                       <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
-                        <img alt="icon" src="../img/svg/shopping-cart (2).svg" class="w-8 h-8 mx-auto">
-                        <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">فرایند خرید</p>
-                       </a>
-                       <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
-                        <img alt="icon" src="../img/svg/medal-star (2).svg" class="w-8 h-8 mx-auto">
-                        <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">تشخیص اصالت</p>
-                       </a>
-                     </div>
-                   </div>
-                </form>
-              </div>
-            </div>
-            <div class="xl:mx-6 mx-4 xl:px-16 px-3 mt-8 lg:mt-[58px] rounded-[20px] bg-[#F4F4F4] p-7 grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-[152px] text-center font-bold text-sm sm:text-lg text-[#363636]">
-              <div>
-               <img alt="img" src="../img/svg/verify.svg" class="mx-auto">
-               <p class="mt-6">چگونه اعتماد کنیم ؟</p>
-              </div>
-              <div>
-                <img alt="img" src="../img/svg/message-text.svg" class="mx-auto">
-                <p class="mt-6">از زبان مشتریان</p>
-               </div>
-               <div>
-                <img alt="img" src="../img/svg/convert-card.svg" class="mx-auto">
-                <p class="mt-6">7 روز بازگشت وجه</p>
-               </div>
-               <div>
-                <img alt="img" src="../img/svg/moneys.svg" class="mx-auto">
-                <p class="mt-6">پرداخت در محل</p>
-               </div>
-            </div>
-            <div class="mt-12">
-              <div class="tabs2 xl:mx-6 mx-4 font-bold flex flex-wrap px-4 items-center justify-center gap-7 lg:gap-[71px] bg-white overflow-hidden rounded-[18px] shadow-12">
-                <div data-id="1" class="active flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="transition group-hover:stroke-[#292D32]" d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z" stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M7 8H17" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M7 13H13" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p>معرفی کوتاه محصول</p>
-                </div>
-                <div data-id="2" class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="transition group-hover:stroke-[#292D32]" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M2 12.8801V11.1201C2 10.0801 2.85 9.22006 3.9 9.22006C5.71 9.22006 6.45 7.94006 5.54 6.37006C5.02 5.47006 5.33 4.30006 6.24 3.78006L7.97 2.79006C8.76 2.32006 9.78 2.60006 10.25 3.39006L10.36 3.58006C11.26 5.15006 12.74 5.15006 13.65 3.58006L13.76 3.39006C14.23 2.60006 15.25 2.32006 16.04 2.79006L17.77 3.78006C18.68 4.30006 18.99 5.47006 18.47 6.37006C17.56 7.94006 18.3 9.22006 20.11 9.22006C21.15 9.22006 22.01 10.0701 22.01 11.1201V12.8801C22.01 13.9201 21.16 14.7801 20.11 14.7801C18.3 14.7801 17.56 16.0601 18.47 17.6301C18.99 18.5401 18.68 19.7001 17.77 20.2201L16.04 21.2101C15.25 21.6801 14.23 21.4001 13.76 20.6101L13.65 20.4201C12.75 18.8501 11.27 18.8501 10.36 20.4201L10.25 20.6101C9.78 21.4001 8.76 21.6801 7.97 21.2101L6.24 20.2201C5.33 19.7001 5.02 18.5301 5.54 17.6301C6.45 16.0601 5.71 14.7801 3.9 14.7801C2.85 14.7801 2 13.9201 2 12.8801Z" stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <p class="after:!-right-[73px]">مشخصات فنی</p>
-                </div>
-                <div data-id="3" class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="transition group-hover:stroke-[#292D32]" d="M18.4698 16.83L18.8598 19.99C18.9598 20.82 18.0698 21.4 17.3598 20.97L13.1698 18.48C12.7098 18.48 12.2599 18.45 11.8199 18.39C12.5599 17.52 12.9998 16.42 12.9998 15.23C12.9998 12.39 10.5398 10.09 7.49985 10.09C6.33985 10.09 5.26985 10.42 4.37985 11C4.34985 10.75 4.33984 10.5 4.33984 10.24C4.33984 5.68999 8.28985 2 13.1698 2C18.0498 2 21.9998 5.68999 21.9998 10.24C21.9998 12.94 20.6098 15.33 18.4698 16.83Z" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M13 15.23C13 16.42 12.56 17.5201 11.82 18.3901C10.83 19.5901 9.26 20.36 7.5 20.36L4.89 21.91C4.45 22.18 3.89 21.81 3.95 21.3L4.2 19.3301C2.86 18.4001 2 16.91 2 15.23C2 13.47 2.94 11.9201 4.38 11.0001C5.27 10.4201 6.34 10.0901 7.5 10.0901C10.54 10.0901 13 12.39 13 15.23Z" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <p class="after:!-right-[73px]">پرسش و پاسخ</p>
-                </div>
-                <div data-id="4" class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="transition group-hover:stroke-[#292D32]" d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M2.51953 7.10999H21.4795" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M8.51953 2.10999V6.96999" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M15.4805 2.10999V6.51999" stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="transition group-hover:stroke-[#292D32]" d="M9.75 14.45V13.25C9.75 11.71 10.84 11.08 12.17 11.85L13.21 12.45L14.25 13.05C15.58 13.82 15.58 15.08 14.25 15.85L13.21 16.45L12.17 17.05C10.84 17.82 9.75 17.19 9.75 15.65V14.45V14.45Z" stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  <p class="after:!-right-[73px]">فیلم خریداران</p>
-                </div>
-              </div>
-              <div class="tabContent2">
-                <div class="mt-[77px]">
-                  <div class="active px-6" data-id="1">
-                    <div class="flex items-center gap-4 text-lg font-bold">
-                      <img alt="icon" src="../img/svg/message-text (2).svg">
-                      <h5>معرفی کوتاه محصول</h5>
-                    </div>
-                    <p class="mt-5 text-lg text-justify leading-[38px]">
-                      تلویزیون سونی X90L سایز 55 اینچ یکی از تلویزیون های 2023 سونی محسوب می شود. تلویزیون سونی ایکس 90 ال ممکن است در بازار به اشتباه با عنوان تلویزیون سونی X9000L یا حتی X900L نیز معرفی و شناخته شود اما مدل دقیق و درست آن X90L می باشد. همینطور ممکن است در بازار این تلویزیون را به عنوان تلویزیون سری 9 سونی نیز معرفی کنند. علاوه بر آن این تلویزیون جزو تلویزیون های براویا (BRAVIA) سونی نیز محسوب می شود و در بازار با این اسم نیز معروف است. سونی تلویزیون های 2023 خود را با پسوند L معرفی و روانه بازار نموده است، به همین دلیل ممکن است این تلویزیون با عنوان تلویزیون سری L سونی نیز در بازار شناخته شود. تلویزیون سونی X90L با مدل کامل XR-55X90L مونتاژ مالزی تولید و در بازار ایران موجود می باشد. تلویزیون X90L یکی از بهترین تلویزیون های گیمینگ 4K با سرعت 120 هرتز سونی در سال 2023 محسوب می شود. این تلویزیون برای استفاده های حرفه ای مانند تماشای فیلم و سریال، گیمینگ و همینطور استفاده خانگی و معمولی کاملا مناسب است. این تلویزیون مدل جدیدتر و جایگزین تلویزیون سونی X90K است که در سال گذشته معرفی شده بود. این تلویزیون دارای صفحه نمایش ال ای دی و کیفیت تصویر 4K می باشد. امسال سونی کمی تلویزیون های خود را دیرتر از سایر رقبا معرفی کرده اما خوشبختانه دست پر وارد میدان رقابت شد و برعکس سال گذشته حرف های زیادی برای گفتن ...
-                    </p>
-                  </div>
-                  <div class="px-6" data-id="2">
-                    <div class="flex items-center gap-4 text-lg font-bold">
-                      <img alt="icon" src="../img/svg/setting-2.svg">
-                      <h5>مشخصات فنی</h5>
-                    </div>
-                    <div class="mt-5">
-                      <div class="bg-[#7E5EFF] acordionBtn cursor-pointer p-[14px] font-bold text-xl text-white rounded-[10px] flex items-center justify-between gap-2">
-                         <p>مشخصات کلی</p>
-                         <div class="flex-center bg-white w-[50px] h-[50px] rounded-[5px]">
-                          <img alt="icon" src="../img/svg/arrow-left.svg" class="w-6 h-6 transition">
-                         </div>
-                      </div>
-                      <div class="acordionContent mt-6 transition active">
-                        <div class="grid grid-cols-12 gap-3 text-xl font-bold mb-4">
-                          <div class="col-span-3">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">مدل:</div>
-                          </div>
-                          <div class="col-span-9">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">X90L</div>
-                          </div>
-                        </div>
-                        <div class="grid grid-cols-12 gap-3 text-xl font-bold mb-4">
-                          <div class="col-span-3">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">تولید کننده:</div>
-                          </div>
-                          <div class="col-span-9">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">
-                              <img alt="icon" src="../img/svg/tick-circle.svg" class="w-7 h-7">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid grid-cols-12 gap-3 text-xl font-bold mb-4">
-                          <div class="col-span-3">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">مدل:</div>
-                          </div>
-                          <div class="col-span-9">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">
-                              <img alt="icon" src="../img/svg/close-circle.svg" class="w-7 h-7">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="grid grid-cols-12 gap-3 text-xl font-bold mb-4">
-                          <div class="col-span-3">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4 h-full">حالت های تصویر:</div>
-                          </div>
-                          <div class="col-span-9">
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4 mb-4">Dolby Vision Bright</div>
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4 mb-4">Custom</div>
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4 mb-4">Custom</div>
-                            <div class="rounded-[10px] bg-[#FAF9FF] p-4">Custom</div>
-                          </div>
-                        </div>
+                        <p class="mt-2 text-sm font-semibold">28 آبان 1403 11:28</p>
                       </div>
                     </div>
                   </div>
-                  <div class="px-6" data-id="3">
-                    <div class="flex items-center justify-between gap-2 mb-[34px]">
-                      <div class="flex items-center gap-4 text-lg font-bold">
-                        <img alt="icon" src="../img/svg/messages-2.svg">
-                        <h5>پرسش و پاسخ</h5>
+                  <button
+                    class="rounded-[5px] bg-blue2 h-[60px] w-full btnHover mt-3 flex items-center justify-center gap-2.5 text-white relative text-sm font-bold">
+                    <img alt="icon" src="../img/svg/shop-add.svg">
+                    <p>افزودن به سبد خرید</p>
+                  </button>
+                  <div class="flex items-center justify-between gap-[14px] mt-3">
+                    <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
+                      <img alt="icon" src="../img/svg/call-calling (2).svg" class="w-8 h-8 mx-auto">
+                      <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">تماس با ما</p>
+                    </a>
+                    <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
+                      <img alt="icon" src="../img/svg/shopping-cart (2).svg" class="w-8 h-8 mx-auto">
+                      <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">فرایند خرید</p>
+                    </a>
+                    <a class="rounded-[10px] bg-[#FAF9FF] p-2 relative btnHover flex-grow">
+                      <img alt="icon" src="../img/svg/medal-star (2).svg" class="w-8 h-8 mx-auto">
+                      <p class="text-xs mt-2.5 font-bold text-[#363636] text-center">تشخیص اصالت</p>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="xl:mx-6 mx-4 xl:px-16 px-3 mt-8 lg:mt-[58px] rounded-[20px] bg-[#F4F4F4] p-7 grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-[152px] text-center font-bold text-sm sm:text-lg text-[#363636]">
+            <div>
+              <img alt="img" src="../img/svg/verify.svg" class="mx-auto">
+              <p class="mt-6">چگونه اعتماد کنیم ؟</p>
+            </div>
+            <div>
+              <img alt="img" src="../img/svg/message-text.svg" class="mx-auto">
+              <p class="mt-6">از زبان مشتریان</p>
+            </div>
+            <div>
+              <img alt="img" src="../img/svg/convert-card.svg" class="mx-auto">
+              <p class="mt-6">7 روز بازگشت وجه</p>
+            </div>
+            <div>
+              <img alt="img" src="../img/svg/moneys.svg" class="mx-auto">
+              <p class="mt-6">پرداخت در محل</p>
+            </div>
+          </div>
+          <div class="mt-12">
+            <div
+              class="tabs2 xl:mx-6 mx-4 font-bold flex flex-wrap px-4 items-center justify-center gap-7 lg:gap-[71px] bg-white overflow-hidden rounded-[18px] shadow-12">
+              <div data-id="1"
+                class="active flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H16C20 2 22 4 22 8V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]" d="M7 8H17" stroke="#B0B7BF" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]" d="M7 13H13" stroke="#B0B7BF" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>معرفی کوتاه محصول</p>
+              </div>
+              <div data-id="2"
+                class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M2 12.8801V11.1201C2 10.0801 2.85 9.22006 3.9 9.22006C5.71 9.22006 6.45 7.94006 5.54 6.37006C5.02 5.47006 5.33 4.30006 6.24 3.78006L7.97 2.79006C8.76 2.32006 9.78 2.60006 10.25 3.39006L10.36 3.58006C11.26 5.15006 12.74 5.15006 13.65 3.58006L13.76 3.39006C14.23 2.60006 15.25 2.32006 16.04 2.79006L17.77 3.78006C18.68 4.30006 18.99 5.47006 18.47 6.37006C17.56 7.94006 18.3 9.22006 20.11 9.22006C21.15 9.22006 22.01 10.0701 22.01 11.1201V12.8801C22.01 13.9201 21.16 14.7801 20.11 14.7801C18.3 14.7801 17.56 16.0601 18.47 17.6301C18.99 18.5401 18.68 19.7001 17.77 20.2201L16.04 21.2101C15.25 21.6801 14.23 21.4001 13.76 20.6101L13.65 20.4201C12.75 18.8501 11.27 18.8501 10.36 20.4201L10.25 20.6101C9.78 21.4001 8.76 21.6801 7.97 21.2101L6.24 20.2201C5.33 19.7001 5.02 18.5301 5.54 17.6301C6.45 16.0601 5.71 14.7801 3.9 14.7801C2.85 14.7801 2 13.9201 2 12.8801Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <p class="after:!-right-[73px]">مشخصات فنی</p>
+              </div>
+              <div data-id="3"
+                class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M18.4698 16.83L18.8598 19.99C18.9598 20.82 18.0698 21.4 17.3598 20.97L13.1698 18.48C12.7098 18.48 12.2599 18.45 11.8199 18.39C12.5599 17.52 12.9998 16.42 12.9998 15.23C12.9998 12.39 10.5398 10.09 7.49985 10.09C6.33985 10.09 5.26985 10.42 4.37985 11C4.34985 10.75 4.33984 10.5 4.33984 10.24C4.33984 5.68999 8.28985 2 13.1698 2C18.0498 2 21.9998 5.68999 21.9998 10.24C21.9998 12.94 20.6098 15.33 18.4698 16.83Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M13 15.23C13 16.42 12.56 17.5201 11.82 18.3901C10.83 19.5901 9.26 20.36 7.5 20.36L4.89 21.91C4.45 22.18 3.89 21.81 3.95 21.3L4.2 19.3301C2.86 18.4001 2 16.91 2 15.23C2 13.47 2.94 11.9201 4.38 11.0001C5.27 10.4201 6.34 10.0901 7.5 10.0901C10.54 10.0901 13 12.39 13 15.23Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p class="after:!-right-[73px]">پرسش و پاسخ</p>
+              </div>
+              <div data-id="4"
+                class="flex items-center gap-4 py-7 cursor-pointer text-[#A4A4A4] group hover:text-[#363636] transition">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z" stroke="#B0B7BF"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]" d="M2.51953 7.10999H21.4795" stroke="#B0B7BF"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]" d="M8.51953 2.10999V6.96999" stroke="#B0B7BF"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]" d="M15.4805 2.10999V6.51999" stroke="#B0B7BF"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="transition group-hover:stroke-[#292D32]"
+                    d="M9.75 14.45V13.25C9.75 11.71 10.84 11.08 12.17 11.85L13.21 12.45L14.25 13.05C15.58 13.82 15.58 15.08 14.25 15.85L13.21 16.45L12.17 17.05C10.84 17.82 9.75 17.19 9.75 15.65V14.45V14.45Z"
+                    stroke="#B0B7BF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <p class="after:!-right-[73px]">فیلم خریداران</p>
+              </div>
+            </div>
+            <div class="tabContent2">
+              <div class="md:mt-[77px] mt-11">
+                <div class="active xl:px-6 px-4" data-id="1">
+                  <div class="flex items-center gap-2 sm:gap-4 sm:text-lg font-bold">
+                    <img alt="icon" src="../img/svg/message-text (2).svg">
+                    <h5>معرفی کوتاه محصول</h5>
+                  </div>
+                  <p class="sm:mt-5 mt-3 sm:text-lg text-justify leading-6 sm:leading-[38px]">
+                    تلویزیون سونی X90L سایز 55 اینچ یکی از تلویزیون های 2023 سونی محسوب می شود. تلویزیون سونی ایکس 90 ال
+                    ممکن است در بازار به اشتباه با عنوان تلویزیون سونی X9000L یا حتی X900L نیز معرفی و شناخته شود اما
+                    مدل دقیق و درست آن X90L می باشد. همینطور ممکن است در بازار این تلویزیون را به عنوان تلویزیون سری 9
+                    سونی نیز معرفی کنند. علاوه بر آن این تلویزیون جزو تلویزیون های براویا (BRAVIA) سونی نیز محسوب می شود
+                    و در بازار با این اسم نیز معروف است. سونی تلویزیون های 2023 خود را با پسوند L معرفی و روانه بازار
+                    نموده است، به همین دلیل ممکن است این تلویزیون با عنوان تلویزیون سری L سونی نیز در بازار شناخته شود.
+                    تلویزیون سونی X90L با مدل کامل XR-55X90L مونتاژ مالزی تولید و در بازار ایران موجود می باشد. تلویزیون
+                    X90L یکی از بهترین تلویزیون های گیمینگ 4K با سرعت 120 هرتز سونی در سال 2023 محسوب می شود. این
+                    تلویزیون برای استفاده های حرفه ای مانند تماشای فیلم و سریال، گیمینگ و همینطور استفاده خانگی و معمولی
+                    کاملا مناسب است. این تلویزیون مدل جدیدتر و جایگزین تلویزیون سونی X90K است که در سال گذشته معرفی شده
+                    بود. این تلویزیون دارای صفحه نمایش ال ای دی و کیفیت تصویر 4K می باشد. امسال سونی کمی تلویزیون های
+                    خود را دیرتر از سایر رقبا معرفی کرده اما خوشبختانه دست پر وارد میدان رقابت شد و برعکس سال گذشته حرف
+                    های زیادی برای گفتن ...
+                  </p>
+                </div>
+                <div class="xl:px-6 px-4" data-id="2">
+                  <div class="flex items-center gap-2 sm:gap-4 sm:text-lg font-bold">
+                    <img alt="icon" src="../img/svg/setting-2.svg">
+                    <h5>مشخصات فنی</h5>
+                  </div>
+                  <div class="mt-5">
+                    <div
+                      class="bg-[#7E5EFF] acordionBtn cursor-pointer p-[14px] font-bold sm:text-xl text-white rounded-[10px] flex items-center justify-between gap-2">
+                      <p>مشخصات کلی</p>
+                      <div class="flex-center bg-white sm:w-[50px] w-8 sm:h-[50px] h-8 rounded-[5px]">
+                        <img alt="icon" src="../img/svg/arrow-left.svg" class="sm:w-6 w-4 sm:h-6 h-4 transition">
                       </div>
-                      <a class="text-sm text-[#7E5EFF]">ارسال دیدگاه</a>
                     </div>
-                    <div>
-                      <div class="bg-white mb-[18px] rounded-[20px] md:rounded-[50px] p-4 shadow-10 rtl:md:pl-9 ltr:md:pr-9 md:p-3 ">
-                        <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
-                          <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]"><img alt="avatar" src="../img/image (12).png" class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
-                            <div>
-                              <p class="font-extrabold text-[#1E2D48] text-center sm:text-right ltr:sm:text-left">
-                                نگار امینی</p>
-                              <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                                از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                سطرآنچنان که لازم است.</p>
-                            </div>
+                    <div class="acordionContent mt-6 transition active">
+                      <div class="grid grid-cols-12 sm:gap-3 sm:text-xl font-bold mb-2 sm:mb-4">
+                        <div class="sm:col-span-3 col-span-12">
+                          <div class="rounded-[10px] bg-[#FAF9FF] p-4 rounded-b-none sm:rounded-b-[10px]">مدل:</div>
+                        </div>
+                        <div class="sm:col-span-9 col-span-12">
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0">
+                            X90L</div>
+                        </div>
+                      </div>
+                      <div class="grid grid-cols-12 sm:gap-3 sm:text-xl font-bold mb-2 sm:mb-4">
+                        <div class="sm:col-span-3 col-span-12">
+                          <div class="rounded-[10px] bg-[#FAF9FF] p-4 rounded-b-none sm:rounded-b-[10px]">تولید کننده:
                           </div>
-                          <div class="flex-shrink-0 flex-grow md:flex-grow-0">
-                            <div class="flex items-center justify-end gap-1 cursor-pointer">
-                              <svg class="ltr:[transform:rotateY(180deg)]" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.6775 9.46642H7.72684L8.94017 8.26242C9.11592 8.08667 9.21466 7.8483 9.21466 7.59975C9.21466 7.3512 9.11592 7.11283 8.94017 6.93708C8.76442 6.76133 8.52606 6.6626 8.27751 6.6626C8.02896 6.6626 7.79059 6.76133 7.61484 6.93708L4.81484 9.73708C4.72987 9.82585 4.66326 9.93052 4.61884 10.0451C4.52549 10.2723 4.52549 10.5272 4.61884 10.7544C4.66326 10.869 4.72987 10.9737 4.81484 11.0624L7.61484 13.8624C7.70161 13.9499 7.80483 14.0193 7.91857 14.0667C8.0323 14.1141 8.1543 14.1385 8.27751 14.1385C8.40072 14.1385 8.52271 14.1141 8.63645 14.0667C8.75018 14.0193 8.85341 13.9499 8.94017 13.8624C9.02765 13.7757 9.09709 13.6724 9.14447 13.5587C9.19186 13.445 9.21625 13.323 9.21625 13.1997C9.21625 13.0765 9.19186 12.9545 9.14447 12.8408C9.09709 12.7271 9.02765 12.6238 8.94017 12.5371L7.72684 11.3331H16.6775C16.925 11.3331 17.1624 11.4314 17.3375 11.6065C17.5125 11.7815 17.6108 12.0189 17.6108 12.2664V15.9997C17.6108 16.2473 17.7092 16.4847 17.8842 16.6597C18.0592 16.8348 18.2966 16.9331 18.5442 16.9331C18.7917 16.9331 19.0291 16.8348 19.2041 16.6597C19.3792 16.4847 19.4775 16.2473 19.4775 15.9997V12.2664C19.4775 11.5238 19.1825 10.8116 18.6574 10.2865C18.1323 9.76142 17.4201 9.46642 16.6775 9.46642Z" fill="#F76B16"></path>
-                              </svg>
-                              <p class="text-xs text-[#1E2D48] font-extrabold">پاسخ</p>
-                            </div>
-                            <p class="text-xs opacity-30 mt-2 text-left ltr:text-right">1401/12/12 /
-                              23:16</p>
+                        </div>
+                        <div class="sm:col-span-9 col-span-12">
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0">
+                            <img alt="icon" src="../img/svg/tick-circle.svg" class="w-7 h-7">
                           </div>
                         </div>
                       </div>
-                      <div class="bg-white mb-[18px] rounded-[20px] md:rounded-[50px] p-4 shadow-10 rtl:md:pl-9 ltr:md:pr-9 md:p-3 ">
-                        <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
-                          <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]"><img alt="avatar" src="../img/image (12).png" class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
-                            <div>
-                              <p class="font-extrabold text-[#1E2D48] text-center sm:text-right ltr:sm:text-left">
-                                نگار امینی</p>
-                              <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                                از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                سطرآنچنان که لازم است.</p>
-                            </div>
-                          </div>
-                          <div class="flex-shrink-0 flex-grow md:flex-grow-0">
-                            <div class="flex items-center justify-end gap-1 cursor-pointer">
-                              <svg class="ltr:[transform:rotateY(180deg)]" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.6775 9.46642H7.72684L8.94017 8.26242C9.11592 8.08667 9.21466 7.8483 9.21466 7.59975C9.21466 7.3512 9.11592 7.11283 8.94017 6.93708C8.76442 6.76133 8.52606 6.6626 8.27751 6.6626C8.02896 6.6626 7.79059 6.76133 7.61484 6.93708L4.81484 9.73708C4.72987 9.82585 4.66326 9.93052 4.61884 10.0451C4.52549 10.2723 4.52549 10.5272 4.61884 10.7544C4.66326 10.869 4.72987 10.9737 4.81484 11.0624L7.61484 13.8624C7.70161 13.9499 7.80483 14.0193 7.91857 14.0667C8.0323 14.1141 8.1543 14.1385 8.27751 14.1385C8.40072 14.1385 8.52271 14.1141 8.63645 14.0667C8.75018 14.0193 8.85341 13.9499 8.94017 13.8624C9.02765 13.7757 9.09709 13.6724 9.14447 13.5587C9.19186 13.445 9.21625 13.323 9.21625 13.1997C9.21625 13.0765 9.19186 12.9545 9.14447 12.8408C9.09709 12.7271 9.02765 12.6238 8.94017 12.5371L7.72684 11.3331H16.6775C16.925 11.3331 17.1624 11.4314 17.3375 11.6065C17.5125 11.7815 17.6108 12.0189 17.6108 12.2664V15.9997C17.6108 16.2473 17.7092 16.4847 17.8842 16.6597C18.0592 16.8348 18.2966 16.9331 18.5442 16.9331C18.7917 16.9331 19.0291 16.8348 19.2041 16.6597C19.3792 16.4847 19.4775 16.2473 19.4775 15.9997V12.2664C19.4775 11.5238 19.1825 10.8116 18.6574 10.2865C18.1323 9.76142 17.4201 9.46642 16.6775 9.46642Z" fill="#F76B16"></path>
-                              </svg>
-                              <p class="text-xs text-[#1E2D48] font-extrabold">پاسخ</p>
-                            </div>
-                            <p class="text-xs opacity-30 mt-2 text-left ltr:text-right">1401/12/12 /
-                              23:16</p>
+                      <div class="grid grid-cols-12 sm:gap-3 sm:text-xl font-bold mb-2 sm:mb-4">
+                        <div class="sm:col-span-3 col-span-12">
+                          <div class="rounded-[10px] bg-[#FAF9FF] p-4 rounded-b-none sm:rounded-b-[10px]">مدل:</div>
+                        </div>
+                        <div class="sm:col-span-9 col-span-12">
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0">
+                            <img alt="icon" src="../img/svg/close-circle.svg" class="w-7 h-7">
                           </div>
                         </div>
-                        <div class="rtl:md:mr-20 ltr:md:ml-20 flex items-center flex-wrap sm:flex-nowrap gap-[18px] mt-6"><img alt="avatar" src="../img/image (12).png" class="w-[72px] h-[72px] rounded-full sm:mx-0 mx-auto block flex-shrink-0">
+                      </div>
+                      <div class="grid grid-cols-12 sm:gap-3 sm:text-xl font-bold mb-2 sm:mb-4">
+                        <div class="sm:col-span-3 col-span-12">
+                          <div class="rounded-[10px] bg-[#FAF9FF] p-4 h-full rounded-b-none sm:rounded-b-[10px]">حالت
+                            های تصویر:</div>
+                        </div>
+                        <div class="sm:col-span-9 col-span-12">
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-b-none sm:rounded-b-[10px] rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0 sm:mb-4">
+                            Dolby Vision Bright</div>
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-b-none sm:rounded-b-[10px] rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0 sm:mb-4">
+                            Custom</div>
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-b-none sm:rounded-b-[10px] rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0 sm:mb-4">
+                            Custom</div>
+                          <div
+                            class="rounded-[10px] bg-[#FAF9FF] border-gray-200 p-4 rounded-t-none sm:rounded-t-[10px] border-t sm:border-t-0">
+                            Custom</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="xl:px-6 px-4" data-id="3">
+                  <div class="flex items-center justify-between gap-2 mb-[34px]">
+                    <div class="flex items-center gap-2 sm:gap-4 sm:text-lg font-bold">
+                      <img alt="icon" src="../img/svg/messages-2.svg">
+                      <h5>پرسش و پاسخ</h5>
+                    </div>
+                    <a class="text-sm text-[#7E5EFF]">ارسال دیدگاه</a>
+                  </div>
+                  <div>
+                    <div
+                      class="bg-white mb-[18px] rounded-[20px] md:rounded-[50px] p-4 shadow-10 rtl:md:pl-9 ltr:md:pr-9 md:p-3 ">
+                      <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
+                        <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]"><img alt="avatar"
+                            src="../img/image (12).png"
+                            class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
                           <div>
-                            <p class="font-extrabold text-[#7E5EFF] text-center sm:text-right ltr:sm:text-left">
-                              ادمین</p>
-                            <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-                              از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            <p class="font-extrabold text-[#1E2D48] text-center sm:text-right ltr:sm:text-left">
+                              نگار امینی</p>
+                            <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی
+                              نامفهوم
+                              از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون
+                              و
                               سطرآنچنان که لازم است.</p>
                           </div>
                         </div>
+                        <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                          <div class="flex items-center justify-end gap-1 cursor-pointer">
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="24" height="23" viewBox="0 0 24 23"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.6775 9.46642H7.72684L8.94017 8.26242C9.11592 8.08667 9.21466 7.8483 9.21466 7.59975C9.21466 7.3512 9.11592 7.11283 8.94017 6.93708C8.76442 6.76133 8.52606 6.6626 8.27751 6.6626C8.02896 6.6626 7.79059 6.76133 7.61484 6.93708L4.81484 9.73708C4.72987 9.82585 4.66326 9.93052 4.61884 10.0451C4.52549 10.2723 4.52549 10.5272 4.61884 10.7544C4.66326 10.869 4.72987 10.9737 4.81484 11.0624L7.61484 13.8624C7.70161 13.9499 7.80483 14.0193 7.91857 14.0667C8.0323 14.1141 8.1543 14.1385 8.27751 14.1385C8.40072 14.1385 8.52271 14.1141 8.63645 14.0667C8.75018 14.0193 8.85341 13.9499 8.94017 13.8624C9.02765 13.7757 9.09709 13.6724 9.14447 13.5587C9.19186 13.445 9.21625 13.323 9.21625 13.1997C9.21625 13.0765 9.19186 12.9545 9.14447 12.8408C9.09709 12.7271 9.02765 12.6238 8.94017 12.5371L7.72684 11.3331H16.6775C16.925 11.3331 17.1624 11.4314 17.3375 11.6065C17.5125 11.7815 17.6108 12.0189 17.6108 12.2664V15.9997C17.6108 16.2473 17.7092 16.4847 17.8842 16.6597C18.0592 16.8348 18.2966 16.9331 18.5442 16.9331C18.7917 16.9331 19.0291 16.8348 19.2041 16.6597C19.3792 16.4847 19.4775 16.2473 19.4775 15.9997V12.2664C19.4775 11.5238 19.1825 10.8116 18.6574 10.2865C18.1323 9.76142 17.4201 9.46642 16.6775 9.46642Z"
+                                fill="#F76B16"></path>
+                            </svg>
+                            <p class="text-xs text-[#1E2D48] font-extrabold">پاسخ</p>
+                          </div>
+                          <p class="text-xs opacity-30 mt-2 text-left ltr:text-right">1401/12/12 /
+                            23:16</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-white mb-[18px] rounded-[20px] md:rounded-[50px] p-4 shadow-10 rtl:md:pl-9 ltr:md:pr-9 md:p-3 ">
+                      <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
+                        <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]"><img alt="avatar"
+                            src="../img/image (12).png"
+                            class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
+                          <div>
+                            <p class="font-extrabold text-[#1E2D48] text-center sm:text-right ltr:sm:text-left">
+                              نگار امینی</p>
+                            <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی
+                              نامفهوم
+                              از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون
+                              و
+                              سطرآنچنان که لازم است.</p>
+                          </div>
+                        </div>
+                        <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                          <div class="flex items-center justify-end gap-1 cursor-pointer">
+                            <svg class="ltr:[transform:rotateY(180deg)]" width="24" height="23" viewBox="0 0 24 23"
+                              fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M16.6775 9.46642H7.72684L8.94017 8.26242C9.11592 8.08667 9.21466 7.8483 9.21466 7.59975C9.21466 7.3512 9.11592 7.11283 8.94017 6.93708C8.76442 6.76133 8.52606 6.6626 8.27751 6.6626C8.02896 6.6626 7.79059 6.76133 7.61484 6.93708L4.81484 9.73708C4.72987 9.82585 4.66326 9.93052 4.61884 10.0451C4.52549 10.2723 4.52549 10.5272 4.61884 10.7544C4.66326 10.869 4.72987 10.9737 4.81484 11.0624L7.61484 13.8624C7.70161 13.9499 7.80483 14.0193 7.91857 14.0667C8.0323 14.1141 8.1543 14.1385 8.27751 14.1385C8.40072 14.1385 8.52271 14.1141 8.63645 14.0667C8.75018 14.0193 8.85341 13.9499 8.94017 13.8624C9.02765 13.7757 9.09709 13.6724 9.14447 13.5587C9.19186 13.445 9.21625 13.323 9.21625 13.1997C9.21625 13.0765 9.19186 12.9545 9.14447 12.8408C9.09709 12.7271 9.02765 12.6238 8.94017 12.5371L7.72684 11.3331H16.6775C16.925 11.3331 17.1624 11.4314 17.3375 11.6065C17.5125 11.7815 17.6108 12.0189 17.6108 12.2664V15.9997C17.6108 16.2473 17.7092 16.4847 17.8842 16.6597C18.0592 16.8348 18.2966 16.9331 18.5442 16.9331C18.7917 16.9331 19.0291 16.8348 19.2041 16.6597C19.3792 16.4847 19.4775 16.2473 19.4775 15.9997V12.2664C19.4775 11.5238 19.1825 10.8116 18.6574 10.2865C18.1323 9.76142 17.4201 9.46642 16.6775 9.46642Z"
+                                fill="#F76B16"></path>
+                            </svg>
+                            <p class="text-xs text-[#1E2D48] font-extrabold">پاسخ</p>
+                          </div>
+                          <p class="text-xs opacity-30 mt-2 text-left ltr:text-right">1401/12/12 /
+                            23:16</p>
+                        </div>
+                      </div>
+                      <div class="rtl:md:mr-20 ltr:md:ml-20 flex items-center flex-wrap sm:flex-nowrap gap-[18px] mt-6">
+                        <img alt="avatar" src="../img/image (12).png"
+                          class="w-[72px] h-[72px] rounded-full sm:mx-0 mx-auto block flex-shrink-0">
+                        <div>
+                          <p class="font-extrabold text-[#7E5EFF] text-center sm:text-right ltr:sm:text-left">
+                            ادمین</p>
+                          <p class="text-[#1E2D48] text-sm opacity-50 mt-2.5">لورم ایپسوم متن ساختگی با تولید سادگی
+                            نامفهوم
+                            از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div data-id="4">
-                    <div class="flex items-center gap-4 text-lg font-bold px-6">
-                      <img alt="icon" src="../img/svg/video-play.svg">
-                      <h5>فیلم خریداران</h5>
+                </div>
+                <div data-id="4">
+                  <div class="flex items-center gap-2 sm:gap-4 sm:text-lg font-bold px-6">
+                    <img alt="icon" src="../img/svg/video-play.svg">
+                    <h5>فیلم خریداران</h5>
+                  </div>
+                  <div class="relative">
+                    <!-- bg -->
+                    <div
+                      class="sm:h-[188px] h-28 absolute sm:-bottom-6 -bottom-1 rtl:right-6 rtl:left-0 ltr:right-0 ltr:left-6 rtl:rounded-r-[20px] ltr:rounded-l-[20px] bg-[#FAF9FF]">
                     </div>
-                    <div class="relative">
-                      <!-- bg -->
-                      <div class="h-[188px] absolute -bottom-6 rtl:right-6 rtl:left-0 ltr:right-0 ltr:left-6 rtl:rounded-r-[20px] ltr:rounded-l-[20px] bg-[#FAF9FF]"></div>
-                      <!--  -->
-                      <div class="swiper films py-12 rtl:pr-12 ltr:pl-12">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="rounded-[18px] shadow-12 relative imgAfter2">
-                              <a href="../img/64ad88885b273.mp4" data-fancybox="gallery" class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
-                                <img alt="icom" src="../img/svg/Vector (4).svg">
-                              </a>
-                              <img alt="img" src="../img/image (14).png" class="rounded-[18px] w-full h-[233px]">
-                              <p class="absolute font-bold text-xs text-white bottom-0 p-4 z-10">ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
-                            </div>
+                    <!--  -->
+                    <div class="swiper films py-12 rtl:sm:pr-12 rtl:pr-4 ltr:sm:pl-12 ltr:pl-4">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="rounded-[18px] shadow-12 relative imgAfter2">
+                            <a href="../img/64ad88885b273.mp4" data-fancybox="gallery"
+                              class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
+                              <img alt="icom" src="../img/svg/Vector (4).svg">
+                            </a>
+                            <img alt="img" src="../img/image (14).png"
+                              class="rounded-[18px] w-full h-[168px] sm:h-[233px]">
+                            <p class="absolute font-bold text-xs text-white bottom-0 sm:p-4 p-3 pb-1.5 sm:pb-4 z-10">
+                              ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="rounded-[18px] shadow-12 relative imgAfter2">
-                             <a href="../img/64ad88885b273.mp4" data-fancybox="gallery" class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
-                                <img alt="icom" src="../img/svg/Vector (4).svg">
-                              </a>
-                              <img alt="img" src="../img/image (14).png" class="rounded-[18px] w-full h-[233px]">
-                              <p class="absolute font-bold text-xs text-white bottom-0 p-4 z-10">ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
-                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="rounded-[18px] shadow-12 relative imgAfter2">
+                            <a href="../img/64ad88885b273.mp4" data-fancybox="gallery"
+                              class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
+                              <img alt="icom" src="../img/svg/Vector (4).svg">
+                            </a>
+                            <img alt="img" src="../img/image (14).png"
+                              class="rounded-[18px] w-full h-[168px] sm:h-[233px]">
+                            <p class="absolute font-bold text-xs text-white bottom-0 sm:p-4 p-3 pb-1.5 sm:pb-4 z-10">
+                              ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="rounded-[18px] shadow-12 relative imgAfter2">
-                             <a href="../img/64ad88885b273.mp4" data-fancybox="gallery" class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
-                                <img alt="icom" src="../img/svg/Vector (4).svg">
-                              </a>
-                              <img alt="img" src="../img/image (14).png" class="rounded-[18px] w-full h-[233px]">
-                              <p class="absolute font-bold text-xs text-white bottom-0 p-4 z-10">ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
-                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="rounded-[18px] shadow-12 relative imgAfter2">
+                            <a href="../img/64ad88885b273.mp4" data-fancybox="gallery"
+                              class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
+                              <img alt="icom" src="../img/svg/Vector (4).svg">
+                            </a>
+                            <img alt="img" src="../img/image (14).png"
+                              class="rounded-[18px] w-full h-[168px] sm:h-[233px]">
+                            <p class="absolute font-bold text-xs text-white bottom-0 sm:p-4 p-3 pb-1.5 sm:pb-4 z-10">
+                              ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="rounded-[18px] shadow-12 relative imgAfter2">
-                             <a href="../img/64ad88885b273.mp4" data-fancybox="gallery" class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
-                                <img alt="icom" src="../img/svg/Vector (4).svg">
-                              </a>
-                              <img alt="img" src="../img/image (14).png" class="rounded-[18px] w-full h-[233px]">
-                              <p class="absolute font-bold text-xs text-white bottom-0 p-4 z-10">ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
-                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="rounded-[18px] shadow-12 relative imgAfter2">
+                            <a href="../img/64ad88885b273.mp4" data-fancybox="gallery"
+                              class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
+                              <img alt="icom" src="../img/svg/Vector (4).svg">
+                            </a>
+                            <img alt="img" src="../img/image (14).png"
+                              class="rounded-[18px] w-full h-[168px] sm:h-[233px]">
+                            <p class="absolute font-bold text-xs text-white bottom-0 sm:p-4 p-3 pb-1.5 sm:pb-4 z-10">
+                              ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
                           </div>
-                          <div class="swiper-slide">
-                            <div class="rounded-[18px] shadow-12 relative imgAfter2">
-                             <a href="../img/64ad88885b273.mp4" data-fancybox="gallery" class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
-                                <img alt="icom" src="../img/svg/Vector (4).svg">
-                              </a>
-                              <img alt="img" src="../img/image (14).png" class="rounded-[18px] w-full h-[233px]">
-                              <p class="absolute font-bold text-xs text-white bottom-0 p-4 z-10">ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
-                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="rounded-[18px] shadow-12 relative imgAfter2">
+                            <a href="../img/64ad88885b273.mp4" data-fancybox="gallery"
+                              class="active:scale-90 w-10 h-10 flex-center rounded-full !absolute cursor-pointer inset-x-0 z-10 !top-[42%] m-auto bg-white2 btnHover">
+                              <img alt="icom" src="../img/svg/Vector (4).svg">
+                            </a>
+                            <img alt="img" src="../img/image (14).png"
+                              class="rounded-[18px] w-full h-[168px] sm:h-[233px]">
+                            <p class="absolute font-bold text-xs text-white bottom-0 sm:p-4 p-3 pb-1.5 sm:pb-4 z-10">
+                              ویدیوی ارسالی جناب آقای فرهادی منش از تهران خریدار تلویزیون سونی 55X90</p>
                           </div>
                         </div>
                       </div>
-                      <div class="bottom-0 rtl:left-16 ltr:right-16 z-10 swiper-button-next4 cursor-pointer btnHover !absolute active:scale-95 flex items-center justify-center w-7 h-7 rounded-[10px] bg-[#d7cdff] swiper-button-disabled">
-                        <img alt="arrow" src="../img/svg/solar_alt-arrow-left-bold-duotone (2).svg" class="ltr:-rotate-180 w-5 h-5">
-                      </div>
-                      <div class="bottom-0 rtl:left-6  ltr:right-6 z-10 swiper-button-prev4 cursor-pointer btnHover !absolute active:scale-95 flex items-center justify-center w-7 h-7 rounded-[10px] bg-[#d7cdff]">
-                        <img alt="arrow" src="../img/svg/solar_alt-arrow-left-bold-duotone (2).svg" class="rtl:rotate-180 w-5 h-5">
-                      </div>
+                    </div>
+                    <div
+                      class="sm:bottom-0 bottom-2 rtl:left-16 ltr:right-16 z-10 swiper-button-next4 cursor-pointer btnHover !absolute active:scale-95 flex items-center justify-center w-7 h-7 rounded-[10px] bg-[#d7cdff] swiper-button-disabled">
+                      <img alt="arrow" src="../img/svg/solar_alt-arrow-left-bold-duotone (2).svg"
+                        class="ltr:-rotate-180 w-5 h-5">
+                    </div>
+                    <div
+                      class="sm:bottom-0 bottom-2 rtl:left-6  ltr:right-6 z-10 swiper-button-prev4 cursor-pointer btnHover !absolute active:scale-95 flex items-center justify-center w-7 h-7 rounded-[10px] bg-[#d7cdff]">
+                      <img alt="arrow" src="../img/svg/solar_alt-arrow-left-bold-duotone (2).svg"
+                        class="rtl:rotate-180 w-5 h-5">
                     </div>
                   </div>
                 </div>
@@ -1014,18 +1152,21 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-     <!-- similar products -->
-     <section class="mt-12 mostsell">
+    <!-- similar products -->
+    <section class="mt-12 mostsell">
       <div class="max-w-content mx-auto px-4 z-2">
         <!-- title -->
-        <div class="flex items-center justify-between gap-2 relative text-white font-bold p-4 rounded-[10px] bg-[#7E5EFF]">
+        <div
+          class="flex items-center justify-between gap-2 relative text-white font-bold p-4 rounded-[10px] bg-[#7E5EFF]">
           <!-- shape -->
-           <img alt="img" src="../img/svg/Rectangle 589.svg" class="absolute rtl:right-0 ltr:left-0 ltr:[transform:rotateY(180deg)] h-full">
+          <img alt="img" src="../img/svg/Rectangle 589.svg"
+            class="absolute rtl:right-0 ltr:left-0 ltr:[transform:rotateY(180deg)] h-full">
           <!--  -->
-          <h4 class="text-2xl relative">محصولات مشابه</h4>
-          <a class="text-lg relative">مشاهده همه</a>
+          <h4 class="tex-xl sm:text-2xl relative">محصولات مشابه</h4>
+          <a class="text-sm sm:text-lg relative hover:text-yellow-300 transition">مشاهده همه</a>
         </div>
       </div>
       <div class="max-w-content mx-auto relative">
@@ -1666,6 +1807,11 @@
   <script src="../js/otp.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/vanilla-tilt.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  </script>
 </body>
 
 </html>
