@@ -11,15 +11,15 @@
 
 <body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-MontserratRegular">
 
-   <!-- login modal -->
-   <div class="modal">
+  <!-- login modal -->
+  <div class="modal">
     <div style="visibility: hidden; opacity: 0;" data-button="login-modal"
-    class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
-    <div
-      class="modal-content bg-white max-w-[1178px] w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
-      <form id="loginForm">
+      class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
+      <div
+        class="modal-content bg-white max-w-[1178px] w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
+        <form id="loginForm">
           <p class="font-bold text-[29px] rtl:font-RokhBold ltr:font-MontserratBold mt-2 sm:mt-5 mb-1">
-          خوش آمدید
+            خوش آمدید
           </p>
           <p class="text-lg sm:text-2xl font-medium rtl:font-RokhBold ltr:font-MontserratBold">
             فروشگاه سونی در خدمت شماست
@@ -27,29 +27,42 @@
           <div class="mt-9">
             <div class="rounded-[10px] border border-[#EEF1FA] px-3 py-4 h-16 flex items-center justify-between gap-2">
               <input placeholder="شماره موبایل" class="outline-none flex-grow-1 w-full text-sm font-bold">
-              <p class="text-sm font-bold text-[#7E5EFF] cursor-pointer rtl:font-RokhBold ltr:font-MontserratBold flex-shrink-0">دریافت کد تایید</p>
+              <p
+                class="text-sm font-bold text-[#7E5EFF] cursor-pointer rtl:font-RokhBold ltr:font-MontserratBold flex-shrink-0">
+                دریافت کد تایید</p>
             </div>
-            <div class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3" dir="ltr">
-              <input type="number" maxlength="1" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-              <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
-             </div>
-             <input type="hidden" id="otpHiddenInput">
-             <div class="flex items-center gap-3 flex-grow mt-9">
-              <div class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
-                  856985
+            <div
+              class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3"
+              dir="ltr">
+              <input type="number" maxlength="1"
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+              <input type="number" maxlength="1" disabled=""
+                class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+            </div>
+            <input type="hidden" id="otpHiddenInput">
+            <div class="flex items-center gap-3 flex-grow mt-9">
+              <div
+                class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
+                856985
               </div>
-              <div class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
-                  <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
-                  <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
+              <div
+                class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
+                <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
+                <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
               </div>
-             </div>
-             <label class="flex items-center gap-2 cursor-pointer mt-8">
+            </div>
+            <label class="flex items-center gap-2 cursor-pointer mt-8">
               <div class="inline-flex items-center gap-2">
                 <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
-                  <input name="type" type="checkbox" class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
-                  <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                  <input name="type" type="checkbox"
+                    class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10"
+                    id="black">
+                  <span
+                    class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                     <div class="w-6 h-6 rounded-[5px] bg-[#7E5EFF]"></div>
                   </span>
                 </label>
@@ -57,15 +70,16 @@
                   مرا به یاد داشته باش</p>
               </div>
             </label>
-            <a class="rounded-[10px] btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-PeydaBold ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</a>
+            <a
+              class="rounded-[10px] btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-PeydaBold ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</a>
           </div>
-      </form>
-      <div class="hidden md:block">
-        <img alt="img" src="../img/Mask group (2).jpg" class="w-full h-full">
+        </form>
+        <div class="hidden md:block">
+          <img alt="img" src="../img/Mask group (2).jpg" class="w-full h-full">
+        </div>
       </div>
     </div>
   </div>
-   </div>
 
   <!-- shape -->
   <img alt="shape" src="../img/Shape.png"
@@ -434,19 +448,23 @@
   <!-- main -->
   <main class="relative">
 
-     <!-- title -->
-     <section class="md:mt-20 mt-6">
+    <!-- title -->
+    <section class="md:mt-20 mt-6">
       <div class="max-w-content mx-auto px-4 relative">
         <!-- bg -->
-         <img alt="bg" src="../img/Group 45669(1).png" class="ltr:[transform:rotateY(180deg)] hidden md:block absolute w-[98%] h-[125px] md:h-[178px] inset-x-0 mx-auto -top-12 md:-top-10">
+        <img alt="bg" src="../img/Group 45669(1).png"
+          class="ltr:[transform:rotateY(180deg)] hidden md:block absolute w-[98%] h-[125px] md:h-[178px] inset-x-0 mx-auto -top-12 md:-top-10">
         <!--  -->
-        <div class="flex items-center gap-4 rounded-2xl p-4 md:p-0 rtl:lg:mr-[230px] ltr:lg:ml-[230px] relative bg-[#7e5eff] md:bg-transparent">
-          <div class="flex-shrink-0 flex-center w-12 md:w-[74px] h-12 md:h-[74px] rounded-[10px] rtl:rounded-tr-none ltr:rounded-tl-none bg-[#b9a9fa]">
+        <div
+          class="flex items-center gap-4 rounded-2xl p-4 md:p-0 rtl:lg:mr-[230px] ltr:lg:ml-[230px] relative bg-[#7e5eff] md:bg-transparent">
+          <div
+            class="flex-shrink-0 flex-center w-12 md:w-[74px] h-12 md:h-[74px] rounded-[10px] rtl:rounded-tr-none ltr:rounded-tl-none bg-[#b9a9fa]">
             <img alt="icon" src="../img/svg/edit-2 (3).svg">
-           </div>
-           <div class="text-white">
-            <h4 class="font-bold text-lg md:text-2xl">ترندهای برتر دکوراسیون آشپزخانه در سال ۲۰۲۲ (به توصیه‌ی طراحان داخلی)</h4>
-           </div>
+          </div>
+          <div class="text-white">
+            <h4 class="font-bold text-lg md:text-2xl">ترندهای برتر دکوراسیون آشپزخانه در سال ۲۰۲۲ (به توصیه‌ی طراحان
+              داخلی)</h4>
+          </div>
         </div>
       </div>
     </section>
@@ -456,7 +474,8 @@
       <div class="max-w-content mx-auto px-4">
         <div class="rounded-[20px] p-5 lg:p-10 bg-white shadow-9 relative">
           <!-- shape -->
-            <img alt="shape" src="../img/Pattern (2).png" class="absolute rtl:right-0 ltr:left-0 top-8 hidden sm:block ltr:[transform:rotateY(180deg)]">
+          <img alt="shape" src="../img/Pattern (2).png"
+            class="absolute rtl:right-0 ltr:left-0 top-8 hidden sm:block ltr:[transform:rotateY(180deg)]">
           <!--  -->
           <div class="relative grid grid-cols-12 gap-x-0 sm:gap-x-7 gap-y-5 sm:gap-y-9">
             <div class="lg:col-span-5 col-span-12">
@@ -464,9 +483,11 @@
             </div>
             <div class="lg:col-span-7 col-span-12">
               <div>
-                <h4 class="font-black text-xl sm:text-[22px] lg:mt-6">ترندهای برتر دکوراسیون آشپزخانه در سال ۲۰۲۲ (به توصیه‌ی طراحان
+                <h4 class="font-black text-xl sm:text-[22px] lg:mt-6">ترندهای برتر دکوراسیون آشپزخانه در سال ۲۰۲۲ (به
+                  توصیه‌ی طراحان
                   داخلی)</h4>
-                <p class="mt-3 sm:leading-10 leading-7 text-sm sm:text-base font-bold text-justify opacity-60 pb-5 border-b border-[#DDDDDD]">
+                <p
+                  class="mt-3 sm:leading-10 leading-7 text-sm sm:text-base font-bold text-justify opacity-60 pb-5 border-b border-[#DDDDDD]">
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
                   متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
                   کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
@@ -540,13 +561,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-12">
-              <p class="opacity-60 font-bold sm:leading-10 leading-7 text-sm sm:text-base text-justify">
+            <div class="col-span-12 editor-section">
+              <p class="text-[#656565] font-bold sm:leading-10 leading-7 text-sm sm:text-base text-justify">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
                 متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
                 کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
                 شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و
+                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. <a>در این صورت می توان امید داشت </a> که تمام
+                و
                 دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
                 اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن ساختگی
                 با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
@@ -557,13 +579,55 @@
                 سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای
                 موجود طراحی اساسا مورد استفاده قرار گیرد.
               </p>
+              <img alt="blog" src="../img/image (9).png">
+              <ul>
+                <li>
+                  sony
+                </li>
+                <li>
+                  tv
+                </li>
+              </ul>
+              <div class="mt-5">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>نام طرح</th>
+                      <th>بودجه لازم</th>
+                      <th>مدارک لازم برای اقدام</th>
+                      <th>مدت اعتبار</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>لورم ایپسوم متن ساختگی طراحان</td>
+                      <td>۲۰۰ میلیون دلار</td>
+                      <td>پاسپورت،‌ویزای تحصیلی، ۵۰ میلیون هزینه ورود و ثبت نام، درخواست نامه</td>
+                      <td>سه سال</td>
+                    </tr>
+                    <tr>
+                      <td>لورم ایپسوم متن ساختگی طراحان</td>
+                      <td>۲۰۰ میلیون دلار</td>
+                      <td>پاسپورت،‌ویزای تحصیلی، ۵۰ میلیون هزینه ورود و ثبت نام، درخواست نامه</td>
+                      <td>سه سال</td>
+                    </tr>
+                    <tr>
+                      <td>لورم ایپسوم متن ساختگی طراحان</td>
+                      <td>۲۰۰ میلیون دلار</td>
+                      <td>پاسپورت،‌ویزای تحصیلی، ۵۰ میلیون هزینه ورود و ثبت نام، درخواست نامه</td>
+                      <td>سه سال</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
         <div class="rounded-[20px] px-5 sm:px-7 pt-5 pb-9 mt-20 bg-white shadow-9">
           <div class="flex-col sm:flex-row flex items-center justify-between sm:gap-2 mb-6 sm:mb-0">
             <div class="relative top-[-53px] h-20 w-[248px] flex-center">
-              <img alt="bg" src="../img/Rectangle 582.png" class="absolute w-full h-full ltr:[transform:rotateY(180deg)]">
+              <img alt="bg" src="../img/Rectangle 582.png"
+                class="absolute w-full h-full ltr:[transform:rotateY(180deg)]">
               <p class="text-white text-2xl font-bold relative">دیدگاه کاربران</p>
             </div>
             <a class="text-sm text-[#7E5EFF]">ارسال دیدگاه</a>
@@ -574,7 +638,8 @@
               class="bg-white mb-[18px] rounded-[20px] md:rounded-[50px] p-4 shadow-10 rtl:md:pl-9 ltr:md:pr-9 md:p-3 ">
               <div class="flex items-center justify-between flex-wrap md:flex-nowrap gap-5">
                 <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
-                  <img alt="avatar" src="../img/image (12).png" class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
+                  <img alt="avatar" src="../img/image (12).png"
+                    class="w-[72px] h-[72px] rounded-full block mx-auto flex-shrink-0">
                   <div>
                     <p class="font-extrabold text-[#1E2D48] text-center sm:text-right ltr:sm:text-left">
                       نگار امینی</p>
@@ -721,77 +786,97 @@
       </div>
     </section>
 
-       <!-- faqs -->
+    <!-- faqs -->
     <section class="sm:mt-24 mt-11">
-        <div class="max-w-content mx-auto px-4">
-          <div class="grid grid-cols-12 sm:gap-12 gap-4 gap-y-8 lg:gap-y-0">
-            <div class="lg:col-span-5 col-span-12">
-              <h1 class="text-2xl sm:text-[40px] sm:leading-[54px] font-extrabold rtl:font-RokhExtraBold ltr:font-MontserratBold">سوالات متداول پاسخ سوالات شما هم در اینجا پیدا کنید </h1>
-              <p class="mt-2 font-bold text-[#43B740] sm:text-base text-xs">این یک نگهدارنده متن برای توضیحات بیشتر این عنوان</p>
-              <p class="mt-12 sm:text-[19px] text-sm">
-                سوالات مختلفی را در رابطه با دکوراسیون منزل با مناسب ترین قیمت ها و بهترین متریال روز در اختیار کاربران قرار می دهد
-              </p>
+      <div class="max-w-content mx-auto px-4">
+        <div class="grid grid-cols-12 sm:gap-12 gap-4 gap-y-8 lg:gap-y-0">
+          <div class="lg:col-span-5 col-span-12">
+            <h1
+              class="text-2xl sm:text-[40px] sm:leading-[54px] font-extrabold rtl:font-RokhExtraBold ltr:font-MontserratBold">
+              سوالات متداول پاسخ سوالات شما هم در اینجا پیدا کنید </h1>
+            <p class="mt-2 font-bold text-[#43B740] sm:text-base text-xs">این یک نگهدارنده متن برای توضیحات بیشتر این
+              عنوان</p>
+            <p class="mt-12 sm:text-[19px] text-sm">
+              سوالات مختلفی را در رابطه با دکوراسیون منزل با مناسب ترین قیمت ها و بهترین متریال روز در اختیار کاربران
+              قرار می دهد
+            </p>
+          </div>
+          <div class="lg:col-span-7 col-span-12">
+            <div class="mb-3">
+              <div
+                class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
+                <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست
+                  خریداران خود می رساند ؟</p>
+                <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
+              </div>
+              <div class="acordionContent2 transition">
+                <div class="sm:py-9 py-5 sm:px-8 px-3">
+                  <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
+                  <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
+                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که
+                    کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف
+                    بازاریابی در طول سفر مشتری است.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="lg:col-span-7 col-span-12">
-              <div class="mb-3">
-                <div class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
-                  <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست خریداران خود می رساند ؟</p>
-                  <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
-                </div>
-                <div class="acordionContent2 transition">
-                  <div class="sm:py-9 py-5 sm:px-8 px-3">
-                   <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
-                   <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
-                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف بازاریابی در طول سفر مشتری است.
-                   </p>
-                  </div>
+            <div class="mb-3">
+              <div
+                class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
+                <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست
+                  خریداران خود می رساند ؟</p>
+                <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
+              </div>
+              <div class="acordionContent2 transition">
+                <div class="sm:py-9 py-5 sm:px-8 px-3">
+                  <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
+                  <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
+                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که
+                    کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف
+                    بازاریابی در طول سفر مشتری است.
+                  </p>
                 </div>
               </div>
-              <div class="mb-3">
-                <div class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
-                  <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست خریداران خود می رساند ؟</p>
-                  <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
-                </div>
-                <div class="acordionContent2 transition">
-                  <div class="sm:py-9 py-5 sm:px-8 px-3">
-                   <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
-                   <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
-                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف بازاریابی در طول سفر مشتری است.
-                   </p>
-                  </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
+                <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست
+                  خریداران خود می رساند ؟</p>
+                <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
+              </div>
+              <div class="acordionContent2 transition">
+                <div class="sm:py-9 py-5 sm:px-8 px-3">
+                  <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
+                  <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
+                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که
+                    کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف
+                    بازاریابی در طول سفر مشتری است.
+                  </p>
                 </div>
               </div>
-              <div class="mb-3">
-                <div class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
-                  <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست خریداران خود می رساند ؟</p>
-                  <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
-                </div>
-                <div class="acordionContent2 transition">
-                  <div class="sm:py-9 py-5 sm:px-8 px-3">
-                   <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
-                   <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
-                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف بازاریابی در طول سفر مشتری است.
-                   </p>
-                  </div>
-                </div>
+            </div>
+            <div class="mb-3">
+              <div
+                class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
+                <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست
+                  خریداران خود می رساند ؟</p>
+                <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
               </div>
-              <div class="mb-3">
-                <div class="acordionBtn2 transition border border-[#E4E8F5] cursor-pointer rounded-[15px] px-5 sm:px-10 sm:py-8 py-6 flex items-center justify-between gap-3">
-                  <p class="font-bold text-sm rtl:font-RokhBold ltr:font-MontserratBold">چی دکو چطور محصولات را به دست خریداران خود می رساند ؟</p>
-                  <img alt="icon" src="../img/svg/Vector (3).svg" class="transition">
-                </div>
-                <div class="acordionContent2 transition">
-                  <div class="sm:py-9 py-5 sm:px-8 px-3">
-                   <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
-                   <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
-                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف بازاریابی در طول سفر مشتری است.
-                   </p>
-                  </div>
+              <div class="acordionContent2 transition">
+                <div class="sm:py-9 py-5 sm:px-8 px-3">
+                  <p class="rtl:font-RokhBold ltr:font-MontserratBold font-extrabold">چی دکو فروشنده محصول نیست</p>
+                  <p class="mt-2 text-xs font-semibold text-[#7A7A7A] leading-6">
+                    اتوماسیون بازاریابی به پرورش سرنخ، تقسیم‌بندی و امتیازدهی سرنخ کمک می‌کند. این تضمین می‌کند که
+                    کسب‌وکارها مؤثرترین گام‌ها را برای پایین بردن مشتریان از قیف خرید بردارند.برای خودکارسازی وظایف
+                    بازاریابی در طول سفر مشتری است.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- features -->

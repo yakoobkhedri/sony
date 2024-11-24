@@ -2257,6 +2257,10 @@ video {
   overflow: visible;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -3361,6 +3365,11 @@ video {
   color: rgb(85 96 118 / var(--tw-text-opacity));
 }
 
+.text-\[\#656565\] {
+  --tw-text-opacity: 1;
+  color: rgb(101 101 101 / var(--tw-text-opacity));
+}
+
 .text-\[\#707783\] {
   --tw-text-opacity: 1;
   color: rgb(112 119 131 / var(--tw-text-opacity));
@@ -3901,33 +3910,155 @@ input[type="number"] {
   color: #7E5EFF;
 }
 
-/* editor section */
+/* editor */
 
-:is([dir="ltr"] .editorSection ul) {
-  margin-left: 1rem;
-  padding-left: 1.5rem;
+.editor-section img{
+  border-radius: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-:is([dir="rtl"] .editorSection ul) {
+.editor-section table {
+  width: 100%;
+  overflow: hidden;
+  text-align: right;
+}
+
+:is([dir="ltr"] .editor-section table) {
+  text-align: left;
+}
+
+.editor-section thead {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.editor-section th {
+  border-width: 1px;
+  border-color: #0000001A;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .editor-section th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.editor-section tbody>*:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.editor-section tbody>*:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.editor-section tbody tr {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 640px) {
+  .editor-section tbody tr {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.editor-section tbody td {
+  border-width: 1px;
+  border-color: #0000001A;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  opacity: 0.6;
+}
+
+.editor-section a{
+  background-color: #7e7eff;
+  opacity: 100%;
+  border-radius: 8px;
+  padding: 3px;
+  color: white;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.editor-section ul {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   margin-right: 1rem;
-  padding-right: 1.5rem;
+  border-right-width: 2px;
+  border-style: dashed;
+  border-color: #00000026;
+  padding-right: 18px;
 }
 
-.editorSection ul li::before {
-  content: url('../src/img/svg/Vector6.svg');
+:is([dir="ltr"] .editor-section ul) {
+  margin-left: 1rem;
+  margin-right: 0px;
+  border-left-width: 2px;
+  border-right-width: 0px;
+  padding-left: 18px;
+  padding-right: 0px;
+}
+
+.editor-section ul li {
+  position: relative;
+  right: -28px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.editor-section ul li:first-child {
+  padding-top: 0px;
+}
+
+.editor-section ul li:last-child {
+  padding-bottom: 0px !important;
+}
+
+:is([dir="ltr"] .editor-section ul li) {
+  left: -29px;
+  right: 0px;
+}
+
+.editor-section ul li::before{
+  content: url('../src/img/solar_check-circle-bold-duotone.png');
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  right: -34px;
 }
 
-:is([dir="ltr"] .editorSection ul li)::before {
-  left: -34px;
+:is([dir="ltr"] .editor-section ul li)::before {
+  left: -1.75rem;
 }
 
-:is([dir="rtl"] .editorSection ul li)::before {
-  right: -34px;
+:is([dir="rtl"] .editor-section ul li)::before {
+  right: -1.75rem;
+}
+
+.editor-section ul li {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(127 127 127 / var(--tw-text-opacity));
 }
 
 /* accordion */
