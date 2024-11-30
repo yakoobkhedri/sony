@@ -2832,6 +2832,21 @@ video {
   padding: 22px;
 }
 
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.\!px-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.\!py-\[46px\] {
+  padding-top: 46px !important;
+  padding-bottom: 46px !important;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2997,13 +3012,24 @@ video {
   padding-bottom: 34px;
 }
 
-.py-\[46px\] {
-  padding-top: 46px;
-  padding-bottom: 46px;
-}
-
 .\!pb-5 {
   padding-bottom: 1.25rem !important;
+}
+
+.\!pb-\[122px\] {
+  padding-bottom: 122px !important;
+}
+
+.\!pb-\[71px\] {
+  padding-bottom: 71px !important;
+}
+
+.\!pt-10 {
+  padding-top: 2.5rem !important;
+}
+
+.\!pt-20 {
+  padding-top: 5rem !important;
 }
 
 .pb-1 {
@@ -3076,10 +3102,6 @@ video {
 
 .pb-\[61px\] {
   padding-bottom: 61px;
-}
-
-.pb-\[71px\] {
-  padding-bottom: 71px;
 }
 
 .pb-\[72px\] {
@@ -4158,8 +4180,8 @@ input[type="number"] {
 /* swiper */
 
 .mySwiper .swiper-slide-thumb-active {
-  border: 1px solid #7E5EFF;
-  border-radius: 10px;
+  border: 1px solid #7E5EFF!important;
+  border-radius: 10px!important;
   box-shadow: 0px 4px 7px -2px #8F8F8FBF !important;
 }
 
@@ -4167,15 +4189,15 @@ input[type="number"] {
   width: 3px!important;
   height: 12px!important;
   background-color: #B0B7BF!important;
-  border-radius: 2px;
-  transition: all .4s;
-  opacity: 100;
-  margin: 0 2.5px;
+  border-radius: 2px!important;
+  transition: all .4s!important;
+  opacity: 100!important;
+  margin: 0 2.5px!important;
 }
 
 #banner .swiper-pagination-bullet-active{
   height: 18px!important;
-  background: linear-gradient(359.73deg, #64C2DB 0.16%, #7476ED 49.59%, #E56F8C 97%);
+  background: linear-gradient(359.73deg, #64C2DB 0.16%, #7476ED 49.59%, #E56F8C 97%)!important;
 }
 
 .about .swiper-pagination-bullet{
@@ -4183,7 +4205,7 @@ input[type="number"] {
   height: 6px!important;
   background-color: #B0B7BF!important;
   border-radius: 70px!important;
-  transition: all .4s;
+  transition: all .4s!important;
   opacity: 100;
   margin: 0 2px!important;
 }
@@ -4198,17 +4220,21 @@ input[type="number"] {
 }
 
 .swiper-pagination-bullet{
-  width: 10px;
-  height: 10px;
-  background-color: #DEDEDE;
-  opacity: 100;
-  transition: all .4s;
+  width: 10px!important;
+  height: 10px!important;
+  background-color: #DEDEDE!important;
+  opacity: 100!important;
+  transition: all .4s!important;
 }
 
 .swiper-pagination-bullet-active{
-  width: 43px;
-  background-color: #7E5EFF;
-  border-radius: 10px;
+  width: 43px!important;
+  background-color: #7E5EFF!important;
+  border-radius: 10px!important;
+}
+
+.swiper-button-next::after,.swiper-button-prev::after {
+  content: none!important;
 }
 
 /* tab */
@@ -4777,6 +4803,18 @@ input[type="number"] {
   margin-right: auto;
 }
 
+:is([dir="ltr"] .ltr\:\!-mr-\[22px\]) {
+  margin-right: -22px !important;
+}
+
+:is([dir="ltr"] .ltr\:\!ml-\[18px\]) {
+  margin-left: 18px !important;
+}
+
+:is([dir="ltr"] .ltr\:\!mr-\[22px\]) {
+  margin-right: 22px !important;
+}
+
 :is([dir="ltr"] .ltr\:-rotate-180) {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -5037,6 +5075,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="rtl"] .rtl\:\!ml-5) {
+  margin-left: 1.25rem !important;
 }
 
 :is([dir="rtl"] .rtl\:rotate-180) {
@@ -5847,6 +5889,11 @@ input[type="number"] {
     padding: 22px;
   }
 
+  .sm\:\!px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -5945,6 +5992,10 @@ input[type="number"] {
   .sm\:py-\[63px\] {
     padding-top: 63px;
     padding-bottom: 63px;
+  }
+
+  .sm\:\!pt-16 {
+    padding-top: 4rem !important;
   }
 
   .sm\:pb-10 {
@@ -6099,6 +6150,10 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:sm\:mr-0) {
     margin-right: 0px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:\!mr-0) {
+    margin-right: 0px !important;
   }
 
   :is([dir="ltr"] .ltr\:sm\:\!rounded-br-\[22px\]) {
