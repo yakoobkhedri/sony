@@ -3113,10 +3113,6 @@ video {
   padding-bottom: 10px;
 }
 
-.pb-\[122px\] {
-  padding-bottom: 122px;
-}
-
 .pb-\[185px\] {
   padding-bottom: 185px;
 }
@@ -3147,10 +3143,6 @@ video {
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pt-14 {
@@ -3920,7 +3912,8 @@ a {
 }
 
 .dropdownContent.active {
-  max-height: 2000px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   overflow: visible;
 }
 
@@ -4128,7 +4121,8 @@ input[type="number"] {
 }
 
 .acordionContent.active,.acordionContent2.active {
-  max-height: 2000px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   overflow: visible;
 }
 

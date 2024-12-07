@@ -247,7 +247,7 @@ a {
   transition: all .4s;
 }
 .dropdownContent.active {
-  max-height: 2000px;
+  max-height: fit-content;
   overflow: visible;
 }
 .mobileMenu {
@@ -344,7 +344,7 @@ input[type="number"] {
   overflow: hidden;
 }
 .acordionContent.active,.acordionContent2.active {
-  max-height: 2000px;
+  max-height: fit-content;
   overflow: visible;
 }
 /* shadow */
