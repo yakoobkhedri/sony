@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="../../dist/output.css" rel="stylesheet">
-  <title>مقایسه محصولات</title>
+  <title>ورود</title>
 </head>
 
 <body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-MontserratRegular">
@@ -15,7 +15,8 @@
   <!-- shape -->
   <img alt="shape" src="../img/Shape.png"
     class="absolute w-[240px] sm:w-[446px] sm:h-[445px] z-0 top-0 rtl:right-0 ltr:left-0 ltr:[transform:rotateY(180deg)]">
-    
+    <img alt="shape" src="../img/svg/Pattern (2).svg" class="absolute hidden sm:block rtl:left-0 ltr:right-0 top-[494px] ltr:[transform:rotateY(180deg)]">
+
   <!-- header -->
   <header class="relative sm:pt-12 pt-3 pb-5">
     <div class="max-w-content mx-auto px-4 ">
@@ -217,10 +218,10 @@
             <p class="rounded-[6px] text-white font-bold bg-gradient4 animate-bounce text-xs w-5 h-5 flex-center">3</p>
           </a>
           <a href="login.html" id="login-modal"
-          class="btnHover relative flex items-center justify-center sm:bg-[#F1F1F1] sm:gap-2 sm:py-2.5 sm:px-4 sm:rounded-[13px] sm:border border-[#0000001A]">
-          <img alt="icon" src="../img/svg/solar_user-bold-duotone.svg" class="flex-shrink-0">
-          <p class="sm:block hidden text-sm text-[#4A4A4A]">ثبت نام / ورود</p>
-        </a>
+            class="btnHover relative flex items-center justify-center sm:bg-[#F1F1F1] sm:gap-2 sm:py-2.5 sm:px-4 sm:rounded-[13px] sm:border border-[#0000001A]">
+            <img alt="icon" src="../img/svg/solar_user-bold-duotone.svg" class="flex-shrink-0">
+            <p class="sm:block hidden text-sm text-[#4A4A4A]">ثبت نام / ورود</p>
+          </a>
         </div>
       </div>
     </div>
@@ -375,190 +376,60 @@
   </header>
 
   <!-- main -->
-  <main class="relative">
+  <main class="relative my-8">
 
-    <!-- sort -->
-    <section class="xl:mt-14 mt-10">
-      <div class="max-w-content mx-auto px-4">
-        <div class="bg-[#f0ecff] w-[94%] mx-auto rounded-t-xl h-4 lg:hidden"></div>
-        <div class="relative bg-[#7e5eff] rounded-xl lg:bg-transparent flex flex-col lg:flex-row items-center gap-4 lg:gap-16 p-3 lg:py-0 ltr:lg:pl-6 ltr:lg:pr-4 rtl:lg:pr-6 rtl:lg:pl-4">
-          <!-- bg -->
-          <div class="h-[125px] w-[92%] hidden lg:block rtl:right-0 ltr:left-0 -top-[27px] absolute rounded-[21px] bg-[#F0ECFF]"></div>
-          <img alt="bg" class="absolute ltr:[transform:rotateY(180deg)] hidden lg:block inset-x-0 w-full h-[143px]" src="../img/Vector 93.png">
-          <!--  -->
-          <div class="relative flex-shrink-0 flex items-start gap-4">
-            <img alt="img" src="../img/svg/Group 45643.svg" class="flex-shrink-0 w-7 h-7">
-            <div>
-              <h4 class="md:text-[22px] text-lg text-white font-extrabold rtl:font-RokhExtraBold ltr:font-MontserratBold">تلویزیون های
-                سونی</h4>
-              <p class="font-bold text-white mt-1.5">1260 محصول</p>
+    <section>
+       <div class="max-w-content mx-auto px-4">
+        <div
+        class="modal-content bg-white max-w-[1178px] mx-auto shadow-lg w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
+        <form id="loginForm">
+            <p class="font-bold text-[29px] rtl:font-RokhBold ltr:font-MontserratBold mt-2 sm:mt-5 mb-1">
+            خوش آمدید
+            </p>
+            <p class="text-lg sm:text-2xl font-medium rtl:font-RokhBold ltr:font-MontserratBold">
+              فروشگاه سونی در خدمت شماست
+            </p>
+            <div class="mt-9">
+              <div class="rounded-[10px] border border-[#EEF1FA] px-3 py-4 h-16 flex items-center justify-between gap-2">
+                <input placeholder="شماره موبایل" class="outline-none flex-grow-1 w-full text-sm font-bold">
+                <p class="text-sm font-bold text-[#7E5EFF] cursor-pointer rtl:font-RokhBold ltr:font-MontserratBold flex-shrink-0">دریافت کد تایید</p>
+              </div>
+              <div class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3" dir="ltr">
+                <input type="number" maxlength="1" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+               </div>
+               <input type="hidden" id="otpHiddenInput">
+               <div class="flex items-center gap-3 flex-grow mt-9">
+                <div class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
+                    856985
+                </div>
+                <div class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
+                    <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
+                    <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
+                </div>
+               </div>
+               <label class="flex items-center gap-2 cursor-pointer mt-8">
+                <div class="inline-flex items-center gap-2">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="type" type="checkbox" class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-[#7E5EFF]"></div>
+                    </span>
+                  </label>
+                  <p class="text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#8466FC]">
+                    مرا به یاد داشته باش</p>
+                </div>
+              </label>
+              <a class="rounded-[10px] btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-PeydaBold ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</a>
             </div>
-          </div>
-          <div class="relative flex-wrap flex-grow-1 w-full py-[22px] px-[18px] bg-white rounded-[10px] flex items-center gap-4 lg:gap-16">
-            <div class="flex items-center gap-3">
-              <img alt="icon" src="../img/svg/element-3.svg" class="w-6 h-6">
-              <p class="font-bold text-[#4A4A4A]">مرتب سازی بر اساس:</p>
-            </div>
-            <ul class="text-sm flex-wrap flex items-center gap-5 lg:gap-6 xl:gap-12">
-              <li class="transition cursor-pointer hover:text-[#7E5EFF] text-[#4A4A4A]">جدیدترین</li>
-              <li class="transition cursor-pointer hover:text-[#7E5EFF] text-[#4A4A4A]">پربازدیدترین</li>
-              <li class="transition cursor-pointer hover:text-[#7E5EFF] text-[#4A4A4A]">پرفروش ترین</li>
-              <li class="transition cursor-pointer hover:text-[#7E5EFF] text-[#4A4A4A]">ارزانترین</li>
-            </ul>
-          </div>
+        </form>
+        <div class="hidden md:block">
+          <img alt="img" src="../img/Mask group (2).jpg" class="w-full h-full">
         </div>
       </div>
-    </section>
-
-    <section class="lg:mt-24 mt-8">
-      <div class="max-w-content mx-auto px-4">
-          <div class="rounded-[20px] bg-[#F9F7FF] sm:px-10 px-4 pt-7 pb-9">
-            <div class="p-3 cursor-pointer btnHover rtl:mr-auto ltr:ml-auto w-[177px] rounded-[10px] flex items-center justify-center gap-3 bg-white">
-              <img alt="icon" src="../img/svg/trash.svg" class="flex-shrink-0">
-              <p class="font-bold">پاک کردن لیست</p>
-            </div>
-            <div class="mt-6 sm:mb-12 mb-5 grid grid-cols-12 sm:gap-6 gap-3 gap-y-6">
-               <div class="flex-center col-span-12 lg:col-span-3">
-                 <div>
-                   <div class="flex items-center justify-center gap-2.5">
-                     <img alt="icon" src="../img/svg/Group 45675.svg" class="flex-shrink-0">
-                     <p class="sm:text-2xl text-lg font-bold text-[#7E5EFF]">مقایسه محصولات</p>
-                   </div>
-                   <p class="mt-4 font-bold text-center">(۳ محصول)</p>
-                 </div>
-               </div>
-               <div class="col-span-6 md:col-span-4 lg:col-span-3">
-                 <div class="rounded-[20px] bg-white p-4">
-                  <svg class="group cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.728 21.2133L21.2133 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21.2133 21.2133L12.728 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <img alt="img" src="../img/image 2 (3).png" class="w-[214px] h-[89px] sm:h-[137px] mt-4 sm:mt-8 mx-auto">
-                  <a class="h-[60px] line-clamp-2 sm:mt-5 mt-3 text-center font-bold text-sm sm:text-lg transition hover:text-[#7E5EFF]">تلویزیون سونی مدل X85L</a>
-                 </div>
-               </div>
-               <div class="col-span-6 md:col-span-4 lg:col-span-3">
-                 <div class="rounded-[20px] bg-white p-4">
-                  <svg class="group cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.728 21.2133L21.2133 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21.2133 21.2133L12.728 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <img alt="img" src="../img/image 2 (3).png" class="w-[214px] h-[89px] sm:h-[137px] mt-4 sm:mt-8 mx-auto">
-                  <a class="h-[60px] line-clamp-2 sm:mt-5 mt-3 text-center font-bold text-sm sm:text-lg transition hover:text-[#7E5EFF]">تلویزیون سونی مدل X85L</a>
-                 </div>
-               </div>
-               <div class="col-span-6 md:col-span-4 lg:col-span-3 hidden md:block">
-                 <div class="rounded-[20px] bg-white p-4">
-                  <svg class="group cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.728 21.2133L21.2133 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21.2133 21.2133L12.728 12.7281" class="transition group-hover:stroke-red-500" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <img alt="img" src="../img/image 2 (3).png" class="w-[214px] h-[89px] sm:h-[137px] mt-4 sm:mt-8 mx-auto">
-                  <a class="h-[60px] line-clamp-2 sm:mt-5 mt-3 text-center font-bold text-sm sm:text-lg transition hover:text-[#7E5EFF]">تلویزیون سونی مدل X85L</a>
-                 </div>
-               </div>
-            </div>
-            <div class="grid items-center grid-cols-12 text-xs sm:text-sm sm:gap-6 gap-3 bg-white mb-6 rounded-[10px] font-medium p-4">
-              <div class="text-base font-bold hidden lg:block col-span-3">قابلیت هوشمندی:</div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center hidden md:block rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-            </div>
-            <div class="grid items-center grid-cols-12 text-xs sm:text-sm sm:gap-6 gap-3 bg-white mb-6 rounded-[10px] font-medium p-4">
-              <div class="text-base font-bold hidden lg:block col-span-3">قابلیت هوشمندی:</div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center hidden md:block rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-            </div>
-            <div class="grid items-center grid-cols-12 text-xs sm:text-sm sm:gap-6 gap-3 bg-white mb-6 rounded-[10px] font-medium p-4">
-              <div class="text-base font-bold hidden lg:block col-span-3">قابلیت هوشمندی:</div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center hidden md:block rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-            </div>
-            <div class="grid items-center grid-cols-12 text-xs sm:text-sm sm:gap-6 gap-3 bg-white mb-6 rounded-[10px] font-medium p-4">
-              <div class="text-base font-bold hidden lg:block col-span-3">قابلیت هوشمندی:</div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center hidden md:block rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-            </div>
-            <div class="grid items-center grid-cols-12 text-xs sm:text-sm sm:gap-6 gap-3 bg-white mb-6 rounded-[10px] font-medium p-4">
-              <div class="text-base font-bold hidden lg:block col-span-3">قابلیت هوشمندی:</div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-              <div class="text-center hidden md:block rtl:lg:text-right ltr:lg:text-left col-span-6 md:col-span-4 lg:col-span-3">
-                <p class="text-center font-bold mb-2 text-sm sm:text-base lg:hidden">قابلیت هوشمندی:</p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-
-    <!-- features -->
-    <section class="mt-24">
-      <div class="max-w-content mx-auto px-4">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 md:gap-y-0 gap-x-2 md:gap-x-0">
-          <div>
-            <img alt="img" src="../img/Group 45580.png" class="w-[60px] sm:w-[74px] h-[60px] sm:h-[74px] mx-auto">
-            <p class="text-center font-extrabold mt-4 text-[#363636]">تحویل اکسپرس</p>
-          </div>
-          <div class="rtl:md:border-r ltr:md:border-l border-[#CCCCCC]">
-            <img alt="img" src="../img/Group 45579.png" class="w-[60px] sm:w-[74px] h-[60px] sm:h-[74px] mx-auto">
-            <p class="text-center font-extrabold mt-4 text-[#363636]">7 روز ضمانت بازگشت</p>
-          </div>
-          <div class="rtl:md:border-r ltr:md:border-l border-[#CCCCCC]">
-            <img alt="img" src="../img/Group 45578.png" class="w-[60px] sm:w-[74px] h-[60px] sm:h-[74px] mx-auto">
-            <p class="text-center font-extrabold mt-4 text-[#363636]">پرداخت ایمن</p>
-          </div>
-          <div class="rtl:md:border-r ltr:md:border-l border-[#CCCCCC]">
-            <img alt="img" src="../img/Group 45577.png" class="w-[60px] sm:w-[74px] h-[60px] sm:h-[74px] mx-auto">
-            <p class="text-center font-extrabold mt-4 text-[#363636]">ضمانت اصل بودن کالا</p>
-          </div>
-        </div>
-      </div>
+       </div>
     </section>
 
   </main>
@@ -1044,6 +915,7 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/otp.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/vanilla-tilt.js"></script>
 </body>

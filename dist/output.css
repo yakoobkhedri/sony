@@ -1054,6 +1054,11 @@ video {
   margin-bottom: auto;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mb-\[30px\] {
   margin-bottom: -30px;
 }
