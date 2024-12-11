@@ -382,7 +382,7 @@
        <div class="max-w-content mx-auto px-4">
         <div
         class="modal-content bg-white max-w-[1178px] mx-auto shadow-lg w-full rounded-[15px] sm:rounded-[25px] py-6 sm:py-10 px-3 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-[67px]">
-        <form action="otp.html">
+        <form id="loginForm">
             <p class="font-bold text-[29px] rtl:font-RokhBold ltr:font-MontserratBold mt-2 sm:mt-5 mb-1">
             خوش آمدید
             </p>
@@ -390,10 +390,35 @@
               فروشگاه سونی در خدمت شماست
             </p>
             <div class="mt-9">
-              <div class="rounded-[10px] border border-[#EEF1FA] px-3 py-4 h-16 flex items-center justify-between gap-2">
-                <input placeholder="شماره موبایل" class="outline-none flex-grow-1 w-full text-sm font-bold">
-              </div>
-              <button type="submit" class="rounded-[10px] w-full btnHover text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-RokhBlack ltr:font-MontserratBold font-extrabold mt-5 sm:mt-8 flex-center text-white">ادامه و دریافت کد تایید</button>
+              <div class="otpContainer mt-10 flex-center rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold gap-3" dir="ltr">
+                <input type="number" maxlength="1" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+                <input type="number" maxlength="1" disabled="" class="block w-[53px] h-[53px] rounded-[10px] border border-[#EEF1FA] text-center otpInput bg-white outline-none">
+               </div>
+               <input type="hidden" id="otpHiddenInput">
+               <div class="flex items-center gap-3 flex-grow mt-9">
+                <div class="bg-white border border-[#EEF1FA] px-3 text-[#393939] flex-shrink-0 rounded-[10px] flex-center h-[65px] rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-2xl">
+                    856985
+                </div>
+                <div class="rounded-[10px] w-full px-[14px] flex-between gap-3 bg-white border border-[#EEF1FA] text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[65px]">
+                    <input placeholder="کد امنیتی" class="flex-grow bg-transparent outline-none w-full">
+                    <img alt="icon" src="../img/svg/shield-tick.svg" class="flex-shrink-0">
+                </div>
+               </div>
+               <label class="flex items-center gap-2 cursor-pointer mt-8">
+                <div class="inline-flex items-center gap-2">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="type" type="checkbox" class="before:content[''] bg-white border border-[#EEF1FA] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-[#7E5EFF]"></div>
+                    </span>
+                  </label>
+                  <p class="text-sm font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#8466FC]">
+                    مرا به یاد داشته باش</p>
+                </div>
+              </label>
+              <button type="submit" class="rounded-[10px] btnHover w-full text-lg h-[51px] sm:h-[71px] bg-[#7E5EFF] rtl:font-RokhBlack ltr:font-MontserratBold font-extrabold mt-5 sm:mt-[53px] flex-center text-white">ورود</button>
             </div>
         </form>
         <div class="hidden md:block">
@@ -886,6 +911,7 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="../js/otp.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/vanilla-tilt.js"></script>
 </body>
