@@ -911,6 +911,10 @@ video {
   top: 62px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1057,6 +1061,11 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .-mb-\[30px\] {
@@ -2816,6 +2825,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.stroke-red-500 {
+  stroke: #ef4444;
 }
 
 .p-1 {
@@ -4779,6 +4792,14 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:right-3) {
+  right: 0.75rem;
+}
+
+:is([dir="ltr"] .ltr\:right-1) {
+  right: 0.25rem;
+}
+
 :is([dir="ltr"] .ltr\:\!-mr-\[22px\]) {
   margin-right: -22px !important;
 }
@@ -5055,6 +5076,14 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-\[-58px\]) {
   right: -58px;
+}
+
+:is([dir="rtl"] .rtl\:left-3) {
+  left: 0.75rem;
+}
+
+:is([dir="rtl"] .rtl\:left-1) {
+  left: 0.25rem;
 }
 
 :is([dir="rtl"] .rtl\:\!ml-5) {
