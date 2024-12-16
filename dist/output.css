@@ -831,6 +831,10 @@ video {
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-11 {
   top: 2.75rem;
 }
@@ -911,8 +915,28 @@ video {
   top: 62px;
 }
 
-.top-1 {
-  top: 0.25rem;
+.-top-5 {
+  top: -1.25rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.-bottom-5 {
+  bottom: -1.25rem;
+}
+
+.-bottom-9 {
+  bottom: -2.25rem;
+}
+
+.-bottom-10 {
+  bottom: -2.5rem;
 }
 
 .-z-0 {
@@ -1061,11 +1085,6 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .-mb-\[30px\] {
@@ -1310,6 +1329,10 @@ video {
 
 .mt-\[87px\] {
   margin-top: 87px;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
 }
 
 .line-clamp-1 {
@@ -1660,10 +1683,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.max-h-\[213px\] {
-  max-height: 213px;
 }
 
 .\!w-\[100px\] {
@@ -3387,11 +3406,6 @@ video {
   color: rgb(30 45 72 / var(--tw-text-opacity));
 }
 
-.text-\[\#292929\] {
-  --tw-text-opacity: 1;
-  color: rgb(41 41 41 / var(--tw-text-opacity));
-}
-
 .text-\[\#363636\] {
   --tw-text-opacity: 1;
   color: rgb(54 54 54 / var(--tw-text-opacity));
@@ -4206,6 +4220,10 @@ input[type="number"] {
   box-shadow: 0px 11px 52px 0px #0000001C;
 }
 
+.shadow-16{
+  box-shadow: -25px 35px 80px 0px #E56F8C78;
+}
+
 .shadow-next {
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
@@ -4740,6 +4758,10 @@ input[type="number"] {
   right: 0px;
 }
 
+:is([dir="ltr"] .ltr\:right-1) {
+  right: 0.25rem;
+}
+
 :is([dir="ltr"] .ltr\:right-16) {
   right: 4rem;
 }
@@ -4790,14 +4812,6 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:right-auto) {
   right: auto;
-}
-
-:is([dir="ltr"] .ltr\:right-3) {
-  right: 0.75rem;
-}
-
-:is([dir="ltr"] .ltr\:right-1) {
-  right: 0.25rem;
 }
 
 :is([dir="ltr"] .ltr\:\!-mr-\[22px\]) {
@@ -4946,6 +4960,10 @@ input[type="number"] {
   padding-right: 66px;
 }
 
+:is([dir="ltr"] .ltr\:pr-24) {
+  padding-right: 6rem;
+}
+
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
 }
@@ -5000,6 +5018,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:left-0) {
   left: 0px;
+}
+
+:is([dir="rtl"] .rtl\:left-1) {
+  left: 0.25rem;
 }
 
 :is([dir="rtl"] .rtl\:left-16) {
@@ -5076,14 +5098,6 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-\[-58px\]) {
   right: -58px;
-}
-
-:is([dir="rtl"] .rtl\:left-3) {
-  left: 0.75rem;
-}
-
-:is([dir="rtl"] .rtl\:left-1) {
-  left: 0.25rem;
 }
 
 :is([dir="rtl"] .rtl\:\!ml-5) {
@@ -5200,6 +5214,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:pr-4) {
   padding-right: 1rem;
+}
+
+:is([dir="rtl"] .rtl\:pl-24) {
+  padding-left: 6rem;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
@@ -5702,6 +5720,10 @@ input[type="number"] {
     height: auto;
   }
 
+  .sm\:h-\[70px\] {
+    height: 70px;
+  }
+
   .sm\:w-11 {
     width: 2.75rem;
   }
@@ -5772,6 +5794,10 @@ input[type="number"] {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-\[70px\] {
+    width: 70px;
   }
 
   .sm\:max-w-\[405px\] {
