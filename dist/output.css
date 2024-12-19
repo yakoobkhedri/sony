@@ -915,30 +915,6 @@ video {
   top: 62px;
 }
 
-.-top-5 {
-  top: -1.25rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-9 {
-  bottom: -2.25rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1093,6 +1069,10 @@ video {
 
 .-mb-\[77px\] {
   margin-bottom: -77px;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
 }
 
 .-mt-2 {
@@ -1329,10 +1309,6 @@ video {
 
 .mt-\[87px\] {
   margin-top: 87px;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
 }
 
 .line-clamp-1 {
@@ -2254,6 +2230,10 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-x-0 {
@@ -4960,10 +4940,6 @@ input[type="number"] {
   padding-right: 66px;
 }
 
-:is([dir="ltr"] .ltr\:pr-24) {
-  padding-right: 6rem;
-}
-
 :is([dir="ltr"] .ltr\:text-right) {
   text-align: right;
 }
@@ -5216,10 +5192,6 @@ input[type="number"] {
   padding-right: 1rem;
 }
 
-:is([dir="rtl"] .rtl\:pl-24) {
-  padding-left: 6rem;
-}
-
 :is([dir="rtl"] .rtl\:text-left) {
   text-align: left;
 }
@@ -5423,6 +5395,10 @@ input[type="number"] {
     padding-right: 46px;
   }
 
+  :is([dir="ltr"] .min-\[460px\]\:ltr\:pr-\[14px\]) {
+    padding-right: 14px;
+  }
+
   :is([dir="rtl"] .min-\[460px\]\:rtl\:left-10) {
     left: 2.5rem;
   }
@@ -5438,6 +5414,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .min-\[460px\]\:rtl\:pl-\[46px\]) {
     padding-left: 46px;
+  }
+
+  :is([dir="rtl"] .min-\[460px\]\:rtl\:pl-\[14px\]) {
+    padding-left: 14px;
   }
 }
 
@@ -5704,6 +5684,10 @@ input[type="number"] {
     height: 52px;
   }
 
+  .sm\:h-\[70px\] {
+    height: 70px;
+  }
+
   .sm\:h-\[71px\] {
     height: 71px;
   }
@@ -5720,8 +5704,8 @@ input[type="number"] {
     height: auto;
   }
 
-  .sm\:h-\[70px\] {
-    height: 70px;
+  .sm\:h-\[103px\] {
+    height: 103px;
   }
 
   .sm\:w-11 {
@@ -5788,6 +5772,10 @@ input[type="number"] {
     width: 52px;
   }
 
+  .sm\:w-\[70px\] {
+    width: 70px;
+  }
+
   .sm\:w-\[74px\] {
     width: 74px;
   }
@@ -5796,8 +5784,8 @@ input[type="number"] {
     width: auto;
   }
 
-  .sm\:w-\[70px\] {
-    width: 70px;
+  .sm\:w-\[130px\] {
+    width: 130px;
   }
 
   .sm\:max-w-\[405px\] {
